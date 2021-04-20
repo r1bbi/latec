@@ -1,0 +1,187 @@
+% ============================ Enrico Ribiani 16-03-2021 ====================================================================
+% Base per i documenti  
+\documentclass{article}
+% ------------ pacchetti necessari ----------------
+\usepackage[a4paper, total={6in, 8in}]{geometry} % formattazione decente della pagina
+\usepackage{graphicx}                            % need for figure
+\usepackage{amsmath}
+\usepackage{amsfonts}                            % if you want the fonts
+\usepackage{amssymb}                             % if you want extra symbols
+\usepackage{graphicx}                            % need for figures
+\usepackage{mathptmx}
+\usepackage{float}                               % serve per mettere tabelle e immagini dove si vuole 
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[hang,flushmargin,bottom]{footmisc}   % footnote format
+\usepackage{fancyhdr, lastpage}
+\usepackage{titlesec}
+\titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}	% required for heading numbering style
+
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+%\titleformat*{\subsubsection}{\large\bfseries}
+%===================inizio pagina del titolo=================
+\begin{document}
+    \begin{titlepage}
+    \begin{center}
+% ------------------ inizio immagine logo ----------
+\begin{figure}
+    \centering
+    \includegraphics{/home/rib/varie/logo.png}
+    \label{fig:logo}
+\end{figure}
+% ------------------ fine immagine logo ----------
+% ------------------ fine immagine logo ----------
+-------------------------------------------------------------------------------------\\
+\vspace{2\baselineskip}
+\large Enrico Ribiani\\
+\large 3AUB\\
+\vfill
+
+\Huge{\textbf{Riassunto Modulo 2, Unità 2-3-4}}\\
+\vfill
+
+%\LARGE{numero esperienza}\\
+%\vfill
+\LARGE{\textbf{19-04-2021}}\\
+%\vfill
+\end{center}
+%=============== fine pagina titolo ===============
+\end{titlepage}
+\tableofcontents
+\vspace{3\baselineskip}
+
+\section{Unità 2: Resistori}
+
+\subsection{Parametri e caratteristiche}
+I resistori sono uno dei componenti passivi più frequenti all'interno di un circuito\\
+Essi comportano l'introduzione di una \textbf{resistenza} elettrica nel circuito, misurata in ohm [$\Omega$].
+I principali parametri ossia quelli più importanti, che vanno a influire maggiormente sulla scelta di un resistore sono:\\
+\begin{enumerate}
+    \item valore nominale
+    \item tolleranza
+    \item potenza nominale
+\end{enumerate}
+Il \textbf{valore nominale} rappresenta il valore più probabile a cui fare riferimento durante il progetto del circuito.\\
+La \textbf{tolleranza} rappresenta il campo di valori entro cui il valore reale della resistenza è compreso, spesso si esprime in maniera relativa al valore nominale.\\
+La \textbf{potenza nominale} indica la massima potenza dissipabile a temperatura ambiente, normalmente \textit{25 °C}, senza che la sua resistenza venga alterata.
+Le resistenze sono classificate in serie dalle \textbf{serie} che raggruppano dei valori commerciali, questa parte non verrà riassunta.\\
+\vspace{1\baselineskip} 
+Il valore nominale dei resistori e la tolleranza si può leggere grazie a un sistema di bande colorate poste sulle resistenze associate a dei valori tramite il codice colori.\\
+Ci sono tre tipi di codici colori, quello a 4 bande, quello a 5 e quello a 6; tutti e tre seguono lo schema: \emph{Cifre significative, moltiplicatore, tolleranza}, infatti le prime 3 bande (prendendo per esempio i codici a 5 bande) indicano le cifre significative che indicano le prime cifre del valore della resistenza, la $4^a$ cifra indica l'ordine di grandezza o moltiplicatore $10^n$ mentre l'ultima ne indica la tolleranza, nei codici a 6 bande viene indicata dalla $6^a$ banda il coefficiente di temperatura che indica come varia la resistenza in base alla temperatura.
+\vspace{\baselineskip}[H]
+Una caratteristica intrinseca molto importante è la  \textbf{potenza dissipabile}, essa indica la potenza massima che il resistore è in grado di dissipare senza che si rovini ossia senza raggiungere valori troppo alti dal momento che l'energia dissipata viene trasformata in calore.\\
+Per calcolarla bisogna tenere conto che se il resistore è più caldo della temperatura ambiente parte del calore viene assorbito \textit{potenza dissipata}.
+\begin{center}
+    La cui formula è: $P_d=\frac{T_i-T_a}{R_th}$.\\
+$T_i$ = temperatura interna del componente, $T_a$ = temperatura ambiente, $R_th$=resistenza termica.
+\end{center}
+Ovviamente la potenza dissipabile è inversamente proporzionale alla temperatura ambiente.\\
+Questa variazione è prevedibile e calcolabile grazie al coefficiente di temperatura (lettera $\alpha$) e dalla formula:
+\begin{center}
+    $R=R_0\cdot[1+\alpha\cdot(T-T_0)]$
+\end{center}
+Allo stesso modo oltre alla resistenza de viene influenzata la resistività.\\
+%___________________________----------------=====================================----------------___________________________do di
+\subsection{Tecnologie costruttive}
+La parti che formano un resistore sono:
+\begin{itemize}
+    \item elemento resistivo
+    \item supporto dell'elemento resistivo
+    \item rivestimento di protezione
+    \item reofori
+\end{itemize}
+I vari tipi di resistori si distinguono per come l'\textbf{elemento resistivo}, ossia la parte che viene attraversata dalla corrente, viene utilizzato.\\
+Ad esempio nei \textbf{resistori a impasto} l'elemento resistivo è composto da un agglomerato di materiali e \emph{polvere di carbone}\\
+Nei \textbf{resistori a film} è costituito da uno strato di conduttore avvolto su uno strato di isolante, per aumentare la resistenza si riduce la sezione e si aumenta la resistenza dal momento che $R=\rho\cdot\frac{l}{S}$\\
+Mentre nei\textbf{ resistori a filo} l'elemento resistivo è un filo metallico avvolto su materiale isolante con un "doppio avvolgimento" o \textbf{avvolgimento antinduttivo} per evitare fenomeni elettromagnetici.\\
+Il materiale con cui viene fatto \textbf{supporto dell'elemento resistivo} deve avere una resistenza di isolamento elevata e proprietà meccaniche e termiche sufficienti a resistere alle temperature.\\
+Rivestimento, resine o smalti.
+%___________________________----------------=====================================----------------___________________________
+\subsection{Tipi di resistori}
+Ci sono due modi in cui i resistori si collegano ai circuiti: tramite reofori o THT \textit{Through Hole Technology} oppuresaldati al circuito o SMT \textit{Sourface Mounted Technology}.
+\vspace{1\baselineskip}
+\\Ci sono anche dei componenti che variando la resistenza riescono a modulare un valore come:
+\begin{itemize}
+    \item \textbf{trimmer}\\
+    I trimmer sono resistenze variabili tramite una vite che scorre sull'elemento resistivo, non sono concepiti per essere variati molto.
+    \item \textbf{potenziometri}\\
+    i potenziometri vengono utilizzati per variare la tensione tramite partitore di tensione.
+    \item \textbf{reostati}\\
+    i reostati vengono usati per regolare la corrente. $I=\frac{V_g}{R_v+R_u}$ dove $Rv$ è la resistenza del trimmer.
+\end{itemize}
+
+%___________________________----------------=====================================----------------___________________________
+\section{Unità 3: Condensatori}
+\subsection{Generalità}
+Un condensatore è formato da due armature separato da un dielettrico e ha la finzione di immagazzinare carica elettrica per poi cederla, quando è carico alle sue due stremità ci sarà una \textit{ddp} che dipende dalla quantità di \textbf{carica} e dalla \textbf{capacità}: $V_c=\frac{Q}{C}$\\
+La carica di un condensatore p definibile come "L'attitudine di immagazzinare carica elettrica".\\
+Se il condensatore è alimentato da un generatore di tensione si caricherà istantaneamente mentre con una resistenza in serie si caricherà esponenzialmente in $4,6\cdot\tau$ e $\tau=Req\cdot C$.\\
+La formula generale della tensione o della carica di un condensatore è:
+\begin{center}
+    $V_{(t)}=V_{0}(1-e)^{-t/\tau}$\\
+    $Q_{(t)}=Q_{0}(1-e)^{-t/\tau}$
+\end{center}
+
+\subsection{Parametri}
+I principali parametri che caratterizzano un resistore sono:
+\begin{enumerate}
+    \item \textbf{capacità nominale}\\
+    È il valore capacitivo determinato dal produttore, si misura in farad [F] e varia in base al dielettrico e alla geometria.\\
+    Per avere una grande capacità è necessario avere un dielettrico molto sottile e con molta superficie oltre a una elevata costante dielettrica poiché $C=\epsilon\cdot\frac{S}{d}$
+    \item \textbf{tolleranza}\\
+    Analoga alle resistenze tranne per il fatto che può essere anche asimmetrica ad esempio $ -20\%\div+50\%$\\
+    \item \textbf{coefficiente di temperatura}\\
+    Indica il variare della capacità in base alla temperatura calcolabile in modo analogo alle resistenze:
+    \begin{center}
+        $C=C_0\cdot[1+T_c\cdot(T-T_0)]$\\
+        $T_c$= Temperature Coefficient
+    \end{center}
+
+    \item \textbf{tensione nominale }\\
+    È la massima tensione sopportabile dal dielettrico prima di bucarsi, quindi possiamo dedurre che questa grandezza sia inversamente proporzionale alla \emph{capacità}
+    \item \textbf{resistenza di isolamento}\\
+    La resistenza del dielettrico, si calcola analogamente a quella dei resistori $R=\rho\cdot\frac{d}{S}$
+    \item \textbf{angolo di perdita}\\
+    Rappresenta la perdita di energia dato dalle resistenze che dissipano energia per l'effetto Joule, la \emph{tangente} di questo angolo rappresenta il rapporto tra potenza persa e potenza reattiva cioè il \emph{fattore di dissipazione}.
+\end{enumerate}
+Alcuni di questi parametri sono riportati sui condensatori più grossi o nei \textit{datasheet}. Nel primo caso vengono riportate tensione nominale, capacità e tolleranza tramite lettere o codici alfanumerici.
+\subsection{Tecnologie costruttive}
+Ci sono 4 tipi di condensatori:
+\begin{itemize}
+    \item \textbf{condensatori ceramici}\\
+    Chiamati così perché appunto usano la  ceramica come dielettrico, sono a forma di disco e di tubetto e vanno da pochi pF a qualche nF.\\
+    Sono divisi in 3 classi, quelli della \textit{I classe} sono \textit{molto stabili} a livello di temperatura. 
+    Quelli di \textit{II classe} hanno un comportamento \textit{poco lineare} ma hanno una $\epsilon$ maggiore di quelli di classe I e posso essere stabili o instabili.
+    Mentre i condensatori di \textit{III classe} sono caratterizzati dallo spessore estremamente \textit{sottile} del \textit{dielettrico} per ridurre al massimo le dimensioni, ma di conseguenza la tensione nominale avrà un valore molto basso.
+    
+    \item \textbf{condensatori a film plastici}\\
+   Questi condensatori usano come dielettrico un film di \textit{plastica metallizzata} come polistirolo, teflon ecc...\\
+   Vengono utilizzati a bassa frequenza, hanno un valore che va da 1 nF a  1000nF e sono molto stabili in perdite e temperatura.
+    
+    \item \textbf{condensatori elettrolitici}\\
+    Utilizzano come dielettrico un ossido di metallo, utilizzano come armature il metallo (alluminio o tantalio);i condensatori in alluminio usano $AI_2O_3$ come ossido.\\
+    Il dielettrico è particolarmente sottile perché viene prodotto tramite elettrolisi utilizzando anche un foglio di rame, l'ossido deve venire riprodotto quando è in funzione collegando una delle due armature con l'elettrolita al + altrimenti l'ossido sparisce provocando una corrente intensa e la seguente esplosione data dall'aumento di temperatura; si dice che i condensatori sono polarizzati.\\
+    I condensatori al tantalio si differenziano da quelli in alluminio solo per la porosità che permette una costruzione di foma a goccia e a parallelepipedo oltre al cilindro. Coprono valori da 1$\mu$F a 100mF, hanno valori nominali basse e hanno una piccola resistenza di isolamento.
+    
+    \item \textbf{condensatori variabili}\\
+    Usano come dielettrico l'aria e sono formati da lamine di alluminio disposte a libro collegate in modo alternato,di due gruppi di armature uno è fisso e l'altro mobile, consentendo di variare la capacità cambiando la superficie in comune tra due armature.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.2]{/home/rib/varie/capscaps.jpg}
+        \caption{Condensatore variabile}
+        \label{varcap}
+    \end{figure}
+\end{itemize}
+\section{Unità 4: Induttori}
+\subsection{Generalità}
+\subsection{Parametri}
+\subsection{Tecnologie costruttive}
+
+\section{Unità 4: Relè}
+\subsection{Generalità}
+\subsection{Parametri}
+\subsection{Tecnologie costruttive}
+
+
+\end{document}
