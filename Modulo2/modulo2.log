@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  22 APR 2021 09:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  22 APR 2021 09:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -364,7 +364,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  66i,7n,72p,641b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/rib/Documenti/latec/Modulo2/modulo2.pdf (7 pages, 193724 bytes).
+Output written on /home/rib/Documenti/latec/Modulo2/modulo2.pdf (7 pages, 193747 bytes).
 PDF statistics:
  66 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
