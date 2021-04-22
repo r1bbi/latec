@@ -236,11 +236,70 @@ Il materiale migliore per i nuclei è la ferrite.
 \subsubsection{Schermatura}
 A volte è necessario \textbf{schermare} le bobine per non disturbare altri componenti tramite \textit{schermi protettivi}.
 Nei circuiti a bassa frequenza lo schermo deve essere più spesso al diminuire della frequenza, necessita inoltre di una continuità nella struttura. Vengono utilizzati metalli ad alta permeabilità iniziale.\\
-Mentre ad alta frequenza (maggiore di 50KHz) gli schermi sono realizzati con materiali ad \textbf{alta conducibilità} come alluminio, sfruttando le correnti parassite per coninare il campo elettrico generato.
+Mentre ad alta frequenza (maggiore di 50KHz) gli schermi sono realizzati con materiali ad \textbf{alta conducibilità} come alluminio, sfruttando le \emph{correnti parassite} per coninare il campo elettrico generato.
+
 \section{Unità 4: Relè}
 \subsection{Generalità}
+I relè sono componenti \textit{elettromeccanici} in grado di chiudere o aprire un circuito mediante l'apertura o la chiusura di contatti elettrici.
+Il cambiamento da stato avviene quando una corrente abbastanza forte percorre le \textbf{spire} della bobina avvolte sul nucleo di materiale ferromagnetico attivando il meccanismo.\\
+Ci sono vari modi di cambiare stato e definiscono i tipi di relè:
+\begin{itemize}
+    \item \textbf{relè neutri}\\
+    Se il passaggio è indipendente dal verso della grandezza della bobina.
+    \item \textbf{relè polarizzati}\\
+    Se il passaggio è dipendente dal verso della grandezza della bobina.
+    \item \textbf{relè monostabili}\\
+    Se la posizione del contatto assunta con la bobina alimentata dura solo fino a quando rimane eccitata.
+    \item \textbf{relè bistabili}\\
+    Se la posizione assunta con la bobina eccitata rimane anche quando cessa e per tornare al punto di partenza ha bisogno di una nuova eccitazone.
+    \item \textbf{relè a tempo}\\
+    Se automaticamente accadeuna variazione dello stato dei ocntatti dopo un certo intervallo di tempo da quando la bobina è stata alimentata o "spenta".
+\end{itemize}
 \subsection{Parametri}
+I principali parametri sono:
+\begin{itemize}
+    \item \textbf{tension di eccitazione}\\
+    Valore di tensione necessario per eccitare il relè.
+    \item \textbf{tipo di corrente }\\
+    Può essere continua o alternata.
+    \item \textbf{rigidità dielettrica}\\
+    Tensione massima applicabile senza cedimenti.
+    \item \textbf{resistenza della bobina}\\
+    Rapposto tra tensione di eccitazione e la corrente.
+    \item \textbf{temperatura di funzionamento}\\
+    Massimo valore di temperatura che la bobina può sopportare senza danneggiarsi.
+    \item \textbf{durata elettrica}\\
+    Numero massimo di manovre eseguibili con i contatti carichi.
+    \item \textbf{durata meccanica}\\
+    Numero massimo di manovre eseguibili con i contatti senza carica.
+    \item \textbf{frequenza di commutazione}\\
+    Numero massimo di manovre eseguibili nel periodo massimo di tempo.
+    \item \textbf{tempi caratteristici}\\
+    Si comprende tempo di attivazione ossia l'intervallo di tempo tra l'eccitazione della bobina e la chiusura del contatto, 
+    stesso ragionamento con il tempo di rilascio solo con la condizione di riposo.\\
+    In entrambi i casi si comprende il tempo di rimbalzo durante il quale gli stati variano prima di stabilizzarsi
+\end{itemize}
 \subsection{Tecnologie costruttive}
+Si possono  distinguere due blocchi fondamentali:
+\begin{itemize}
+    \item \textbf{lato eccitazione}\\
+    Comprende il \emph{nucleo magnetico}, \emph{avvolgimenti di eccitazione} (il numero di spire dipende dalla forza di attrazione), l'\emph{ancora} 
+    \item \textbf{lato contatti}\\
+    \begin{itemize}
+        \item \textit{contatti di chiusura}\\
+        normalmente aperti (NO)
+        \item \textit{contatti di apertura}\\
+        normalmente chiusi (NC)
+        \item \textit{contatti di scambio}\\
+        Comprendono un contatto comune tra un contatto \emph{NO} e uno \emph{NC}
+    \end{itemize}
 
+    \begin{figure}[H]
+        \includegraphics[scale=0.25]{/home/rib/varie/relelele.jpg}
+        \caption{Schema contatti}
+        \label{contatt}
+     \end{figure}
+I materiali per i contatti sono oro, argento, platino, o leghe per potenze maggiori.
+\end{itemize}
 
 \end{document}
