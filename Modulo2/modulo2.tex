@@ -92,14 +92,14 @@ La parti che formano un resistore sono:
     \item reofori
 \end{itemize}
 I vari tipi di resistori si distinguono per come l'\textbf{elemento resistivo}, ossia la parte che viene attraversata dalla corrente, viene utilizzato.\\
-Ad esempio nei \textbf{resistori a impasto} l'elemento resistivo è composto da un agglomerato di materiali e \emph{polvere di carbone}\\
+Ad esempio nei \textbf{resistori a impasto} l'elemento resistivo è composto da un agglomerato di materiali e \emph{polvere di carbone}.\\
 Nei \textbf{resistori a film} è costituito da uno strato di conduttore avvolto su uno strato di isolante, per aumentare la resistenza si riduce la sezione e si aumenta la resistenza dal momento che $R=\rho\cdot\frac{l}{S}$\\
 Mentre nei\textbf{ resistori a filo} l'elemento resistivo è un filo metallico avvolto su materiale isolante con un "doppio avvolgimento" o \textbf{avvolgimento antinduttivo} per evitare fenomeni elettromagnetici.\\
 Il materiale con cui viene fatto \textbf{supporto dell'elemento resistivo} deve avere una resistenza di isolamento elevata e proprietà meccaniche e termiche sufficienti a resistere alle temperature.\\
 Rivestimento, resine o smalti.
 %___________________________----------------=====================================----------------___________________________
 \subsection{Tipi di resistori}
-Ci sono due modi in cui i resistori si collegano ai circuiti: tramite reofori o THT \textit{Through Hole Technology} oppuresaldati al circuito o SMT \textit{Sourface Mounted Technology}.
+Ci sono due modi in cui i resistori si collegano ai circuiti: tramite reofori o THT \textit{Through Hole Technology} oppure saldati al circuito o SMT \textit{Sourface Mounted Technology}.
 \vspace{1\baselineskip}
 \\Ci sono anche dei componenti che variando la resistenza riescono a modulare un valore come:
 \begin{itemize}
@@ -116,7 +116,7 @@ Ci sono due modi in cui i resistori si collegano ai circuiti: tramite reofori o 
 \subsection{Generalità}
 Un condensatore è formato da due armature separato da un dielettrico e ha la finzione di immagazzinare carica elettrica per poi cederla, quando è carico alle sue due stremità ci sarà una \textit{ddp} che dipende dalla quantità di \textbf{carica} e dalla \textbf{capacità}: $V_c=\frac{Q}{C}$\\
 La carica di un condensatore p definibile come "L'attitudine di immagazzinare carica elettrica".\\
-Se il condensatore è alimentato da un generatore di tensione si caricherà istantaneamente mentre con una resistenza in serie si caricherà esponenzialmente in $4,6\cdot\tau$ e $\tau=Req\cdot C$.\\
+Se il condensatore è alimentato da un generatore di tensione si caricherà istantaneamente mentre con una resistenza in serie si caricherà esponenzialmente in $4,5\cdot\tau$ e $\tau=Req\cdot C$.\\
 La formula generale della tensione o della carica di un condensatore è:
 \begin{center}
     $V_{(t)}=V_{0}(1-e)^{-t/\tau}$\\
@@ -146,13 +146,14 @@ I principali parametri che caratterizzano un resistore sono:
     Rappresenta la perdita di energia dato dalle resistenze che dissipano energia per l'effetto Joule, la \emph{tangente} di questo angolo rappresenta il rapporto tra potenza persa e potenza reattiva cioè il \emph{fattore di dissipazione}.
 \end{enumerate}
 Alcuni di questi parametri sono riportati sui condensatori più grossi o nei \textit{datasheet}. Nel primo caso vengono riportate tensione nominale, capacità e tolleranza tramite lettere o codici alfanumerici.
+
 \subsection{Tecnologie costruttive}
 Ci sono 4 tipi di condensatori:
 \begin{itemize}
     \item \textbf{condensatori ceramici}\\
     Chiamati così perché appunto usano la  ceramica come dielettrico, sono a forma di disco e di tubetto e vanno da pochi pF a qualche nF.\\
     Sono divisi in 3 classi, quelli della \textit{I classe} sono \textit{molto stabili} a livello di temperatura. 
-    Quelli di \textit{II classe} hanno un comportamento \textit{poco lineare} ma hanno una $\epsilon$ maggiore di quelli di classe I e posso essere stabili o instabili.
+    Quelli di \textit{II classe} hanno un comportamento \textit{poco lineare} ma hanno una $\epsilon$ maggiore di quelli di classe I e posso essere stabili o instabili.\\
     Mentre i condensatori di \textit{III classe} sono caratterizzati dallo spessore estremamente \textit{sottile} del \textit{dielettrico} per ridurre al massimo le dimensioni, ma di conseguenza la tensione nominale avrà un valore molto basso.
     
     \item \textbf{condensatori a film plastici}\\
@@ -160,9 +161,10 @@ Ci sono 4 tipi di condensatori:
    Vengono utilizzati a bassa frequenza, hanno un valore che va da 1 nF a  1000nF e sono molto stabili in perdite e temperatura.
     
     \item \textbf{condensatori elettrolitici}\\
-    Utilizzano come dielettrico un ossido di metallo, utilizzano come armature il metallo (alluminio o tantalio);i condensatori in alluminio usano $AI_2O_3$ come ossido.\\
-    Il dielettrico è particolarmente sottile perché viene prodotto tramite elettrolisi utilizzando anche un foglio di rame, l'ossido deve venire riprodotto quando è in funzione collegando una delle due armature con l'elettrolita al + altrimenti l'ossido sparisce provocando una corrente intensa e la seguente esplosione data dall'aumento di temperatura; si dice che i condensatori sono polarizzati.\\
-    I condensatori al tantalio si differenziano da quelli in alluminio solo per la porosità che permette una costruzione di foma a goccia e a parallelepipedo oltre al cilindro. Coprono valori da 1$\mu$F a 100mF, hanno valori nominali basse e hanno una piccola resistenza di isolamento.
+    Utilizzano come dielettrico un \textbf{ossido di metallo}, utilizzano come armature il metallo (alluminio o tantalio); i condensatori in alluminio usano $AI_2O_3$ come ossido.\\
+    Il dielettrico è particolarmente sottile perché viene \textit{prodotto} tramite \textit{elettrolisi} utilizzando anche un foglio di rame, l'ossido deve venire riprodotto quando è in funzione collegando una delle due armature con l'elettrolita al + altrimenti l'ossido sparisce provocando una corrente intensa e la seguente esplosione data dall'aumento di temperatura; si dice che i condensatori sono polarizzati.\\
+    I condensatori al tantalio si differenziano da quelli in alluminio solo per la porosità che permette una costruzione di foma a goccia e a parallelepipedo oltre al cilindro.\\ 
+    Coprono valori da 1$\mu$F a 100mF, hanno valori nominali basse e hanno una piccola resistenza di isolamento.
     
     \item \textbf{condensatori variabili}\\
     Usano come dielettrico l'aria e sono formati da lamine di alluminio disposte a libro collegate in modo alternato,di due gruppi di armature uno è fisso e l'altro mobile, consentendo di variare la capacità cambiando la superficie in comune tra due armature.
@@ -173,11 +175,68 @@ Ci sono 4 tipi di condensatori:
         \label{varcap}
     \end{figure}
 \end{itemize}
+    
 \section{Unità 4: Induttori}
 \subsection{Generalità}
+Un circuito percorso da corrente genera nello spazio un \textbf{campo magnetico} $\Phi$ questa grandezza è direttamente proporzionale 
+alla corrente e dipende anche da una costante di proporzionalità chiamata \textit{induttanza}.
+\begin{center}
+    $\Phi=L\cdot I$
+\end{center}
+L'induttanza è la proprietà di un circuito di opporsi alla variazione di corrente nel tempo ha come \textit{u.d.m.} l'\emph{henry [H]}, l'induttore è il componenete che usa questa 
+proprietà e al livello più semplice è una bobina.\\
+A livello reale si schematizza con una resistenza in serie per raggruppare le perdite ohmice e un condensatore in parallelo per gli effetti capacitivi tra le spire.\\
+\begin{figure}[H]
+    \centering
+        \includegraphics[scale=0.2]{/home/rib/varie/indutt.jpg}
+        \caption{Schema induttore reale}
+        \label{indutt}
+\end{figure}
+\noindent
+Questa resistenza $R_s$ causa una caduta di potenziale che crea un'angolo di perdita (90°-$\delta$) da cui dipende la tensione ai capi dell'induttore.
 \subsection{Parametri}
+I \textbf{parametri caratteristici} di un induttore sono:
+\begin{itemize}
+    \item il fattore di qualità (Q);
+    \item l'angolo di perdita;
+    \item la frequenza di risonanza;
+    \item il valore di induttanza L;
+    \item la tolleranza sull'induttanza;
+    \item il coefficente di temperatura dell'induttanza.
+\end{itemize}
+Il fattore di qualità \textbf{Q} rappresenta il rapporto tra energia immagazzinata e dissipata in un periodo \emph{t}.
+\begin{center}
+    \begin{math}
+        Q=\omega\frac{W}{P}=2\pi\textit{f}\frac{W}{P}
+    \end{math}\\
+    \textit{W} è l'energia immagazzinata mentre \textit{P} è l'energia dissipata.
+\end{center}
+Q dipende anche dalle perdite per effetto joule, perdite dielettriche, perdite date da correnti parassite e perdite date dall'isteresi ma spoprattutto dalla frequenza.\\
+L'\textbf{angolo di perdita} viene utilizzato dalle case produttrici come fattore di qualità infatti viene indicato anche con dei grafici.
+La \textbf{tolleranza} è un valore che rappresenta la soglia oltre la quale l'induttore si comporta come un condensatore puro.
+\begin{center}
+    \textit{f}$_0=\frac{1}{2\pi \sqrt{LC}}$
+\end{center}
 \subsection{Tecnologie costruttive}
-
+Gli induttori possono essere costruiti senza nucleo o con nucleo,
+negli induttori \textbf{senza nucleo} l'avvolgimento viene disposto intorno a un supporto di materiale isolante.\\
+Per minimizzare le perdite e aumentare la frequenza sopportabile sono stati adottati vari tipi di avvolgimento.
+\begin{itemize}
+    \item \textbf{solenoidale}:\\
+    L'avvolgimento viene svolto con un solo strato su supporto isolante cilindrico.
+    \item \textbf{a più strati} \\
+    Per ottenere valori induttivi maggiori, simile al solenoide solo a più strati
+    \item \textbf{a nido d'ape} \\
+    Avviene translando e ruotando contemporaneamente il supporto 
+    \item \textbf{toroidale}\\
+    Utilizzato per campi magnetici di debole intensità, anche su più strati.
+\end{itemize}
+Gli induttori \textbf{con nucleo} permettono di ottenere un valore di induttanza maggiore facendo diminuire \emph{Q} per le perdite date dal ciclo di isteresi.
+Il materiale migliore per i nuclei è la ferrite.
+\subsubsection{Schermatura}
+A volte è necessario \textbf{schermare} le bobine per non disturbare altri componenti tramite \textit{schermi protettivi}.
+Nei circuiti a bassa frequenza lo schermo deve essere più spesso al diminuire della frequenza, necessita inoltre di una continuità nella struttura. Vengono utilizzati metalli ad alta permeabilità iniziale.\\
+Mentre ad alta frequenza (maggiore di 50KHz) gli schermi sono realizzati con materiali ad \textbf{alta conducibilità} come alluminio, sfruttano le correnti parassite.
 \section{Unità 4: Relè}
 \subsection{Generalità}
 \subsection{Parametri}

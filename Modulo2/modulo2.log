@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  20 APR 2021 09:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  22 APR 2021 09:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -339,24 +339,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 132--134
 </home/rib/varie/capscaps.jpg, id=26, 475.7775pt x 345.29pt>
 File: /home/rib/varie/capscaps.jpg Graphic file (type jpg)
 <use /home/rib/varie/capscaps.jpg>
-Package pdftex.def Info: /home/rib/varie/capscaps.jpg  used on input line 171.
+Package pdftex.def Info: /home/rib/varie/capscaps.jpg  used on input line 173.
 (pdftex.def)             Requested size: 95.15381pt x 69.05676pt.
- 
+ [4]
+</home/rib/varie/indutt.jpg, id=30, 1080.035pt x 530.98375pt>
+File: /home/rib/varie/indutt.jpg Graphic file (type jpg)
+<use /home/rib/varie/indutt.jpg>
+Package pdftex.def Info: /home/rib/varie/indutt.jpg  used on input line 191.
+(pdftex.def)             Requested size: 216.00317pt x 106.19485pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 186--194
+
+ []
+
+[5 </home/rib/varie/capscaps.jpg> </home/rib/varie/indutt.jpg>] 
 AED: lastpage setting LastPage
-[4 </home/rib/varie/capscaps.jpg>] [5] (/home/rib/Documenti/latec/Modulo2/modulo2.aux) ) 
+[6] (/home/rib/Documenti/latec/Modulo2/modulo2.aux) ) 
 Here is how much of TeX's memory you used:
- 3688 strings out of 479383
- 49619 string characters out of 5875830
- 342080 words of memory out of 5000000
- 20725 multiletter control sequences out of 15000+600000
- 433591 words of font info for 84 fonts, out of 8000000 for 9000
+ 3700 strings out of 479383
+ 49876 string characters out of 5875830
+ 342088 words of memory out of 5000000
+ 20736 multiletter control sequences out of 15000+600000
+ 434605 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,7n,72p,641b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/rib/Documenti/latec/Modulo2/modulo2.pdf (6 pages, 160822 bytes).
+Output written on /home/rib/Documenti/latec/Modulo2/modulo2.pdf (7 pages, 193724 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 66 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
