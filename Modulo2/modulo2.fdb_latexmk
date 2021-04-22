@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1619083017 "/home/rib/Documenti/latec/Modulo2/modulo2.tex" "/home/rib/Documenti/latec/Modulo2/modulo2.pdf" "modulo2" 1619083037
-  "/home/rib/Documenti/latec/Modulo2/modulo2.aux" 1619083017 2432 447abe0b5207c6c8882c4356d6ed8f26 ""
-  "/home/rib/Documenti/latec/Modulo2/modulo2.tex" 1619083035 19687 7ab0a2ad194dd8cb1a0cae599f9367f6 ""
+["pdflatex"] 1619083596 "/home/rib/Documenti/latec/Modulo2/modulo2.tex" "/home/rib/Documenti/latec/Modulo2/modulo2.pdf" "modulo2" 1619083596
+  "/home/rib/Documenti/latec/Modulo2/modulo2.aux" 1619083596 2432 447abe0b5207c6c8882c4356d6ed8f26 ""
+  "/home/rib/Documenti/latec/Modulo2/modulo2.tex" 1619083595 19688 05da94724b29aedf203089e31a70ac2c ""
   "/home/rib/varie/capscaps.jpg" 1618902808 21571 40171c7953012652852a68f4c81b9e0b ""
   "/home/rib/varie/indutt.jpg" 1619073241 26151 3c3db88c8c9aaa99066cd39ca25382da ""
   "/home/rib/varie/logo.png" 1615884265 69488 22e24cf68e486dd6cf1ffbccbfe5f286 ""
@@ -82,13 +82,13 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1616952564 33301 a3134070eacafb10b1f371612ce2650d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1618730807 354078 5dfe06454a260c5a1acf3581ba0a184c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1618730795 2635853 5bef12e0fc285855a4e3a575dcd0464a ""
-  "modulo2.aux" 1619083017 2432 447abe0b5207c6c8882c4356d6ed8f26 "pdflatex"
-  "modulo2.tex" 1619083035 19687 7ab0a2ad194dd8cb1a0cae599f9367f6 ""
-  "modulo2.toc" 1619083017 1147 a1126cedcba92e93f43d73c9fb63af00 "pdflatex"
+  "modulo2.aux" 1619083596 2432 447abe0b5207c6c8882c4356d6ed8f26 "pdflatex"
+  "modulo2.tex" 1619083595 19688 05da94724b29aedf203089e31a70ac2c ""
+  "modulo2.toc" 1619083596 1147 a1126cedcba92e93f43d73c9fb63af00 "pdflatex"
   (generated)
-  "modulo2.aux"
-  "modulo2.toc"
   "modulo2.pdf"
   "/home/rib/Documenti/latec/Modulo2/modulo2.pdf"
-  "/home/rib/Documenti/latec/Modulo2/modulo2.log"
+  "modulo2.aux"
   "modulo2.log"
+  "/home/rib/Documenti/latec/Modulo2/modulo2.log"
+  "modulo2.toc"
