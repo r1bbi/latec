@@ -13,5 +13,5 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Schermatura}{6}{}%
 \contentsline {section}{\numberline {4}Unità 4: Relè}{6}{}%
 \contentsline {subsection}{\numberline {4.1}Generalità}{6}{}%
-\contentsline {subsection}{\numberline {4.2}Parametri}{6}{}%
-\contentsline {subsection}{\numberline {4.3}Tecnologie costruttive}{6}{}%
+\contentsline {subsection}{\numberline {4.2}Parametri}{7}{}%
+\contentsline {subsection}{\numberline {4.3}Tecnologie costruttive}{8}{}%

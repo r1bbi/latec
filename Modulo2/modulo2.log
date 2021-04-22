@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  22 APR 2021 09:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  22 APR 2021 11:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -352,22 +352,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--194
 
  []
 
-[5 </home/rib/varie/capscaps.jpg> </home/rib/varie/indutt.jpg>] 
+[5 </home/rib/varie/capscaps.jpg> </home/rib/varie/indutt.jpg>] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 287--288
+
+ []
+
+</home/rib/varie/relelele.jpg, id=41, 1284.8pt x 564.1075pt>
+File: /home/rib/varie/relelele.jpg Graphic file (type jpg)
+<use /home/rib/varie/relelele.jpg>
+Package pdftex.def Info: /home/rib/varie/relelele.jpg  used on input line 298.
+(pdftex.def)             Requested size: 321.19922pt x 141.02652pt.
+
 AED: lastpage setting LastPage
-[6] (/home/rib/Documenti/latec/Modulo2/modulo2.aux) ) 
+[8 </home/rib/varie/relelele.jpg>] (/home/rib/Documenti/latec/Modulo2/modulo2.aux) ) 
 Here is how much of TeX's memory you used:
- 3700 strings out of 479383
- 49876 string characters out of 5875830
- 342088 words of memory out of 5000000
- 20736 multiletter control sequences out of 15000+600000
+ 3707 strings out of 479383
+ 50056 string characters out of 5875830
+ 342096 words of memory out of 5000000
+ 20742 multiletter control sequences out of 15000+600000
  434605 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  66i,7n,72p,641b,292s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/rib/Documenti/latec/Modulo2/modulo2.pdf (7 pages, 193747 bytes).
+Output written on /home/rib/Documenti/latec/Modulo2/modulo2.pdf (9 pages, 235684 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
