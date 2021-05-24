@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}Uso della scheda e obiettivi}{1}{section.1}%
+\contentsline {section}{\numberline {2}Strumenti utilizzati}{1}{section.2}%
+\contentsline {section}{\numberline {3}Progettazione, selezione componenti e dimensionamento}{1}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Preventivo}{1}{subsection.3.1}%
+\contentsline {section}{\numberline {4}allegati}{1}{section.4}%
+\contentsline {paragraph}{Schema di multisim}{1}{paragraph*.1}%
+\contentsline {paragraph}{Schema di Ultiboard}{2}{paragraph*.2}%
+\contentsline {paragraph}{Render 3d}{2}{paragraph*.3}%

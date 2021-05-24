@@ -15,23 +15,102 @@
 \usepackage[hang,flushmargin,bottom]{footmisc}   % footnote format
 \usepackage{fancyhdr, lastpage}
 \usepackage{titlesec}
+\usepackage[table,dvipsnames]{xcolor}
+
 \titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}	% required for heading numbering style
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+%===================links=================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=Sepia,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Arduino Shield},
+    pdfpagemode=FullScreen,
+    }
 %===================inizio pagina del titolo=================
 \begin{document}
     \begin{titlepage}
 \begin{flushleft}
 \vspace{3\baselineskip}
 
-\huge{\textbf{Esercitazione Progettuale Arduino}}
+\Huge{\textbf{Progetto scheda di interfaccia per Arduino}}
 \vfill
 \LARGE Enrico Ribiani\\
 \LARGE 3AUB\\
 \vfill
-\huge{ITT M. BUONARROTI 22-03-2021}
+\huge{ITT M. BUONARROTI 24-05-2021}
 
 %=============== fine pagina titolo ===============
 \end{flushleft}
 \end{titlepage}
+%=============== Intestazione ===============
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Enrico Ribiani}
+\fancyhead[LO,RE]{3AUB}
 
+\fancyhead[CO,CE]{sezione \thesection}%??????????????''
+%=============== fine Intestazione ===============
 
+\tableofcontents
+\vskip 3cm
+
+\section{Uso della scheda e obiettivi}
+\section{Strumenti utilizzati}
+\section{Progettazione, selezione componenti e dimensionamento}
+    \subsection{Preventivo}
+        \begin{center}
+        \begin{tabular}{| c | c | c | c| c |} 
+        \hline
+        \rowcolor{BurntOrange} Codice prodotto & Descrizione & Quantità & Prezzo & Totale\\ [0.5ex] 
+        \hline
+        \rowcolor{Peach} 13dwer & groda & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Apricot} 13dwer & groda & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Peach} 13dwer & groda & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Apricot}13dwer & groda & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Peach} 13dwer & groda & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Apricot} 13dwer & groda & 8 & 8.88 & 64\\
+        \hline
+   \end{tabular}
+   \\
+   \vskip 2mm
+   \begin{tabular}[h]{|c|c|}
+       \hline
+        \rowcolor{BurntOrange} Prezzo totale & 121321\\
+       \hline
+   \end{tabular}
+   \end{center}
+
+\section{allegati}
+\paragraph{Schema di multisim}
+\href{https://drive.google.com/file/d/1VOPnspiu-4T2ZOR6uaUWNH1DUEd0fUcg/view?usp=sharing}{Link immagine}
+\begin{figure}[H]
+    \centering
+        \includegraphics[scale=0.5]{/home/rib/varie/multisimp.png}
+        \label{multisimp}
+\end{figure}
+
+\paragraph{Schema di Ultiboard}
+\href{https://drive.google.com/file/d/1ZlJ_AIXvgzdlvAawX5noBu48i03zm5dP/view?usp=sharing}{Link immagine}
+\begin{figure}[H]
+    \centering
+        \includegraphics[scale=0.5]{/home/rib/varie/ultiabroad.png}
+        \label{ultiabroad}
+\end{figure}
+
+\paragraph{Render 3d}
+\href{https://drive.google.com/file/d/1EMIzjUSU50ij58dLTjCctJGQM4YIgIii/view?usp=sharing}{Link immagine}
+\begin{figure}[H]
+    \centering
+        \includegraphics[scale=0.5]{/home/rib/varie/3dboard.png}
+        \label{3d}
+\end{figure}
 \end{document}

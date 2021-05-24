@@ -1,8 +1,0 @@
-\contentsline {section}{\numberline {1}Analisi di scenario / SWAT}{1}{}%
-\contentsline {subsection}{\numberline {1.1}Individuare un area di mercato dove poter operare, quindi una serie di servizi da proporre }{1}{}%
-\contentsline {section}{\numberline {2}Analisi di mercato}{1}{}%
-\contentsline {subsection}{\numberline {2.1}Individuazione dei clienti interessati al servizio che posso proporre}{1}{}%
-\contentsline {section}{\numberline {3}Analisi dei Concorrenti}{1}{}%
-\contentsline {subsection}{\numberline {3.1}individuazione della concorrenza per capire se il servizio che propongo è unico o no}{1}{}%
-\contentsline {section}{\numberline {4}Analisi della struttura}{1}{}%
-\contentsline {subsection}{\numberline {4.1}Elenco dell'attrezzatura e dei software che servono per offrire il servizio -> Includere il costo dei beni}{1}{}%
