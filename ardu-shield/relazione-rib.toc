@@ -1,0 +1,15 @@
+\contentsline {section}{\numberline {1}Introduzione Generale}{1}{section.1}%
+\contentsline {section}{\numberline {2}Uso della scheda e specifiche di progetto}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Normative di progetto}{1}{subsection.2.1}%
+\contentsline {section}{\numberline {3}Strumenti utilizzati}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Materiale di supporto}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Software}{2}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Progettazione, scelta componenti e dimensionamento}{2}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Struttura della scheda}{2}{subsection.4.1}%
+\contentsline {section}{\numberline {5}allegati}{I}{section.5}%
+\contentsline {paragraph}{Schema progetto}{I}{paragraph*.1}%
+\contentsline {paragraph}{Schema di multisim}{II}{paragraph*.2}%
+\contentsline {paragraph}{Schema di Ultiboard}{II}{paragraph*.3}%
+\contentsline {paragraph}{Render 3d}{II}{paragraph*.4}%
+\contentsline {subsection}{\numberline {5.1}Preventivo componenti}{III}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Bibliografia}{III}{section.6}%

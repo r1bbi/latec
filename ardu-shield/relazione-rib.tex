@@ -28,17 +28,18 @@
 \tikzset{
   basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
   root/.style   = {basic, rounded corners=2pt, thin, align=center,
-                   fill=orange!80,},
-  level 2/.style = {basic, rounded corners=6pt, thin,align=center, fill=orange!60,
+                   fill=orange!70},
+  level 2/.style = {basic, rounded corners=6pt, thin,align=center, fill=orange!50,
                    text width=8em},
-  level 3/.style = {basic, thin, align=left, fill=orange!30, text width=6.5em}
+  level 3/.style = {basic, thin, align=left, fill=orange!20, text width=6.5em}
 }
+
 %===================links=================
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
     linkcolor=Sepia,
-    filecolor=magenta,      
+    filecolor=Green,      
     urlcolor=Cyan,
     pdftitle={Arduino Shield},
     pdfpagemode=FullScreen,
@@ -65,8 +66,8 @@
 %=============== Intestazione ===============
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhead[RO,LE]{Enrico Ribiani}
-\fancyhead[LO,RE]{3AUB}
+\fancyhead[RO,L]{Enrico Ribiani}
+a
 \cfoot{\thepage}
 %=============== fine Intestazione ===============
 \tableofcontents
@@ -74,8 +75,8 @@
 \vskip 3cm
 % =============== Introduzione Generale ===============
 \section{Introduzione Generale}
-Questa relazione tecnica ha come obiettivo quello di redarre ciò che è stata la produzione e la progettazione della scheda 
-Arduino sviluppata dalla classe \textit{3AUB} dell'istituto \href{https://www.buonarroti.tn.it/}{Buonarroti}.\\
+Questa relazione tecnica ha come obiettivo quello di redarre ciò che è stata la produzione e la progettazione dello schield per la scheda 
+Arduino progettato dalla classe \textit{3AUB} dell'istituto \href{https://www.buonarroti.tn.it/}{Buonarroti}.\\
 Il progetto è stato svolto nelle ore laboratoriali di Sistemi Automatici e TPSE dopo aver completato una parte di teoria.\\
 La scheda è stata realizzata principalmente per scopi didattici, per imparare come si progetta un pcb e soprattutto come si documenta la progettazione, questa parte verrà svolta
 nelle prossime sezioni di questo documento.\\
@@ -85,12 +86,15 @@ La scheda funge come shield per \textit{Arduino Uno} in quanto il sui scopo è q
 a voltaggi come 9 e 24V, tensioni molto utilizzate in campo più industriale.\\
 Quindi le morsettiere sono state progettate per essere compatibili con la scheda dal punto di vista elettrico, logico e logistico, infatti la cosa principale è che 
 ci sia corrispondenza tra i pin che vengono usati per interfacciarsi e comunicare dalla scheda allo shield.
-
+Lo shield permette di avere una parte di contollo logico a tensioni piè basse e una parte di potenza che arriva fino a 240V, senza di questo non si potrebbe riuscire ad operare con 
+tensioni così alte.
 \subsection{Normative di progetto}
-Sono state seguite per l'aspetto progettuale le norme \href{https://my.ceinorme.it/home.html}{CEI} riguardanti il disegno tecnico
+Sono state seguite per l'aspetto progettuale le norme \href{https://my.ceinorme.it/home.html}{CEI} riguardanti il disegno tecnico, inoltre sono tati scelti solamente componenti certificati.
 % =============== Strumenti utilizzati ===============
 \section{Strumenti utilizzati}
 \subsection{Materiale di supporto}
+Come materiale di supporto sono stati utilizzati i datasheet dei componenti, in particolare quello del 4N25 perché è stato dovuto essere costruito all'interno di \textit{Ultiboard}.\\
+Inoltre sono stati utilizzati anche i datasheet di Arduino per capire quali pin potessero venire utilizzati e quali no perché utilizzati.
 \subsection{Software}
 Abbiamo usato \textit{Multisim}[\ref{multisim}] per la seconda parte di progettazione, appunto quella che riguarda l'inizio della concretizzazione
 degli schemi elettrici.\\
@@ -108,12 +112,18 @@ $R_{s-a}=\frac{(Tmax-Ta)}{Pd-R_{c-s}-R_{j-c}}$\\
 \end{center}
 \noindent
 Dove \textit{$R_{c-s}$} è la R termica tra case e disspatore, \textit{$R_{j-c}$} è la R termica tra chip e case,\\ \textit{$R_{s-a}$} è la R termica tra dissipatore e ambiente.\\
+I componenti sono stati scelti in base alla tensione e alla potenza dissipata, per il rele e i transistor è stato preso in considerazione anche il tempo di risposta e di attivazione.\\
+Anche le piste dovrebbero essere dimensionate ma sotto una certa corrente le piste vengono lasciate con una larghezza di default.\\ 
+La formula per dimensionare le piste è:
+\begin{center}
+    $\mu$
+\end{center}
 \subsection{Struttura della scheda}
 La scheda è divisa in 3 parti principali che gestiscono vari processi. Trascurando i collegamenti tra di loro si possono isolare facilmente,
 soprattutto la loro divisione è evidente nel primo progetto[\ref{prog}] perché sono divise tra di loro graficamente.\\
 Nello schema seguente si va a dividere queste 3 sezioni in modo da capire le loro funzioni in un quadro generale.\\
 
-\begin{figure}[!h]
+\begin{figure}[H]
     \begin{center}
         \begin{tikzpicture}[
             level 1/.style={sibling distance=40mm},
@@ -125,7 +135,7 @@ Nello schema seguente si va a dividere queste 3 sezioni in modo da capire le lor
           % The first level, as children of the initial tree
             child {node[level 2] (c1) {Alimentazione}}
             child {node[level 2] (c2) {24V input}}
-            child {node[level 2] (c3) {24V- 240V output}};
+            child {node[level 2] (c3) {24v - 240V output}};
           
           % The second level, relatively positioned nodes
           \begin{scope}[every node/.style={level 3}]
@@ -138,9 +148,8 @@ Nello schema seguente si va a dividere queste 3 sezioni in modo da capire le lor
           \node [below of = c21] (c22) {Digital input arduino};
           
           
-          \node [below of = c3, xshift=15pt] (c31) {6 24V input}
-          \node [below of = c31] (c32) {digital output};
-          
+          \node [below of = c3, xshift=15pt] (c31) {6 24V input};
+          \node [below of = c31] (c32) {3 digital output};
           \end{scope}
           
           % lines from each level 1 node to every one of its "children"
@@ -157,12 +166,12 @@ Nello schema seguente si va a dividere queste 3 sezioni in modo da capire le lor
           \foreach \value in {1,...,5}
             \draw[->] (c3.195) |- (c31);
             \draw[->] (c3.195) |- (c32);
-          
+
           \end{tikzpicture}
     \end{center}
-    \label{Schema struttura}
-    \caption{Schema sezioni Shield}
 \end{figure}
+
+\vfill
 % =============== allegati ===============
 \section{allegati} 
 \pagenumbering{Roman}
@@ -208,31 +217,41 @@ Nello schema seguente si va a dividere queste 3 sezioni in modo da capire le lor
         \hline
         \rowcolor{BurntOrange} Codice prodotto & Dispositivo & Descrizione & Quantità & Prezzo & Totale\\ [0.5ex] 
         \hline
-        \rowcolor{Peach} prova & Relè & prova & 8 & 8.88 & 64\\
+        \rowcolor{Peach} G6E-134P-US & Relè & componente elettromeccanico (output)& 3 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot} prova & Dissipatore & prova & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} ??? & Dissipatore & dissipatore per LM7809CT & 1 & 8.88 & 64\\
         \hline
-        \rowcolor{Peach} 4N25 & Fototransistor &  prova & 8 & 8.88 & 64\\
+        \rowcolor{Peach} 4N25 & optoisolatore & controllo di circuiti di potenza & 4 & 0.56 & 2.24\\
         \hline
-        \rowcolor{Apricot}prova & Led & diodo Led verde & 7 & 8.88 & 64\\
+        \rowcolor{Apricot} SRD-12VDC-S L-C & transistor  &  transistor elettromeccanico potenza & 3 & 1 & 3\\
         \hline
-        \rowcolor{Peach} 02B2.2 & Diodo Zener & prova & 5 & 8.88 & 64\\
+        \rowcolor{Peach}prova & Led & diodo Led verde & 7 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot} prova & Diodo & prova & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} 1N6267A & Diodo Zener & stabilizzatore di tensione & 5 & 0.5 & 2.5\\
         \hline
-        \rowcolor{Peach} prova & Resistore 330\Omega & prova & 8 & 8.88 & 64\\
+        \rowcolor{Peach} 1N4001G & Diodo & serve a evitare ritorni di corrente & 4 & 0.25 & 1\\
         \hline
-        \rowcolor{Apricot} prova & Resistore 1.5k\Omega & prova & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} ??? & Resistore 330$\Omega$ & dissipatore di corrente  & 7 & 8.88 & 64\\
         \hline
-        \rowcolor{Peach} prova & Resistore 560 \Omega & prova & 8 & 8.88 & 64\\
+        \rowcolor{Peach} ??? & Resistore 1.5k$\Omega$ & dissipatore di corrente & 8 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot} prova &  & Resistore 3.3 k\Omega & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} ??? & Resistore 560 $\Omega$ & dissipatore di corrente & 3 & 8.88 & 64\\
         \hline
-        \rowcolor{Peach} prova & Condensatore 10 {\mu}F & prova & 8 & 8.88 & 64\\
+        \rowcolor{Peach} ??? & Resistore 3.3 k$\Omega$ & dissipatore di corrente & 4 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot} prova & Condensatore 22 {\mu}F & prova & 8 & 8.88 & 64\\
-        \rowcolor{Peach} prova & Fusibile & prova & 8 & 8.88 & 64\\
-        \rowcolor{Apricot} LM7809CT & Resistore 560 \Omega & prova & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} ??? & Condensatore 10 $\mu$F & prova & 1 & 8.88 & 64\\
+        \hline
+        \rowcolor{Peach} ??? & Condensatore 22 $\mu$F & prova & 1 & 8.88 & 64\\
+        \hline
+        \rowcolor{Apricot} ??? & Fusibile & protegge dalle sovracorrenti & 1 & 8.88 & 64\\
+        \hline
+        \rowcolor{Peach} LM7809CT & Trasformatore  & Trasformatore di tensione da 24V a 9V & 1 & 0.3 & 0.3\\
+        \hline
+        \rowcolor{Apricot} ??? & Morsettiera x10 & prova & 2 & 8.88 & 64\\
+        \hline
+        \rowcolor{Peach} ??? & Morsettiera x2 & prova & 1 & 8.88 & 64\\
+        \hline
+        \rowcolor{Apricot} ??? & Morsettiera x6 & Arduino analog input & 1 & 8.88 & 64\\
         \hline
    \end{tabular}
    \vskip 2mm
@@ -246,5 +265,10 @@ Nello schema seguente si va a dividere queste 3 sezioni in modo da capire le lor
    \section{Bibliografia}
    \begin{itemize}
        \item \href{https://datasheetspdf.com/pdf/766811/ThinkiSemiconductor/LM78XX/1}{LM7809CT datasheet}
+       \item \href{https://www.alldatasheet.com/datasheet-pdf/pdf/2846/MOTOROLA/4N25.html}{4N25 datasheet}
+       \item \href{https://www.alldatasheet.com/datasheet-pdf/pdf/1131947/SONGLERELAY/SRD12VDCSLC.html}{SRD-12VDC-S L-C datasheet}
+       \item \href{https://it.farnell.com/on-semiconductor/1n4001g/diodo-standard-1a-do-41/dp/1458986?gclid=CjwKCAjwqcKFBhAhEiwAfEr7zUiXu7byYKAv4I9jzqX1HOrYwDHbs8iKbdpKXM1QnqVZ_xLJMfnMjxoCd9kQAvD_BwE&mckv=s_dc|pcrid|522005845083|kword|1n4001g|match|p|plid||slid||product||pgrid|122762829255|ptaid|kwd-10795764537|&CMP=KNC-GIT-GEN-SKU-MDC-Semiconductors}{1N4001G datasheet}
+       \item \href{https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6e.pdf}{G6E-134P-US datasheet}
+       \item \href{http://www.farnell.com/datasheets/2240125.pdf}{1N6267A}
    \end{itemize}
 \end{document}
