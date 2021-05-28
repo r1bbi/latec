@@ -2,7 +2,7 @@
 % Base per i documenti  
 \documentclass{article}
 % ------------ pacchetti necessari ----------------
-\usepackage[a4paper, total={6in, 8in}]{geometry} % formattazione decente della pagina
+\usepackage[a4paper, total={6in, 8in},margin=1in]{geometry} % formattazione decente della pagina
 \usepackage{graphicx}                            % need for figure
 \usepackage{amsmath}
 \usepackage{amsfonts}                            % if you want the fonts
@@ -16,7 +16,9 @@
 \usepackage{fancyhdr, lastpage}
 \usepackage{titlesec}
 \usepackage[table,dvipsnames]{xcolor}
-
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand*\contentsname{Indice}
 \titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}	% required for heading numbering style
 \titleformat*{\section}{\Large\bfseries}
 \titleformat*{\subsection}{\large\bfseries}
@@ -26,7 +28,7 @@
     colorlinks=true,
     linkcolor=Sepia,
     filecolor=magenta,      
-    urlcolor=blue,
+    urlcolor=Cyan,
     pdftitle={Arduino Shield},
     pdfpagemode=FullScreen,
     }
@@ -34,14 +36,17 @@
 \begin{document}
     \begin{titlepage}
 \begin{flushleft}
-\vspace{3\baselineskip}
-
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{/home/rib/varie/logo.png}
+\end{figure}
+\vspace{2\baselineskip}
 \Huge{\textbf{Progetto scheda di interfaccia per Arduino}}
 \vfill
 \LARGE Enrico Ribiani\\
 \LARGE 3AUB\\
 \vfill
-\huge{ITT M. BUONARROTI 24-05-2021}
+\huge{ITT M. BUONARROTI }
 
 %=============== fine pagina titolo ===============
 \end{flushleft}
@@ -51,36 +56,73 @@
 \fancyhead{}
 \fancyhead[RO,LE]{Enrico Ribiani}
 \fancyhead[LO,RE]{3AUB}
+\cfoot{\thepage}
 
-\fancyhead[CO,CE]{sezione \thesection}%??????????????''
+%\fancyhead[CO,CE]{sezione \thesection}%??????????????''
 %=============== fine Intestazione ===============
-
+%=============== Titlepage =======================
 \tableofcontents
 \vskip 3cm
-
-\section{Uso della scheda e obiettivi}
+\section{Introduzione Generale}
+\section{Uso della scheda e specifiche di progetto}
+\subsection{Normative di progetto}
 \section{Strumenti utilizzati}
-\section{Progettazione, selezione componenti e dimensionamento}
-    \subsection{Preventivo}
-        \begin{center}
-        \begin{tabular}{| c | c | c | c| c |} 
+\subsection{Materiale di supporto}
+\subsection{Software}
+\section{Progettazione, scelta componenti e dimensionamento}
+\colorbox{CadetBlue}{Coesioni tra componenti e tra blocchi della scheda (diagramma a blocchi) }\\
+Per dimensionare l'aletta di raffreddamento \textit{Codice aletta} è stata usata la formula:
+\begin{center}
+$R_{s-a}=\frac{(Tmax-Ta)}{Pd-R_{c-s}-R_{j-c}}$\\
+\end{center}
+Dove \textit{$R_{c-s}$} è la R termica tra case e disspatore, \textit{$R_{j-c}$} è la R termica tra chip e case,\\ \textit{$R_{s-a}$} è la R termica tra dissipatore e ambiente.\\
+
+
+\section{allegati} %% non va impaginato e messo numerato 
+%\pagenumbering{Roman}
+\paragraph{Schema di multisim}
+\href{https://drive.google.com/file/d/1VOPnspiu-4T2ZOR6uaUWNH1DUEd0fUcg/view?usp=sharing}{Link immagine}
+\begin{figure}[H]
+   \centering
+        \includegraphics[scale=0.5]{/home/rib/varie/multisimp.png}
+       \label{multisimp}
+\end{figure}
+
+\paragraph{Schema di Ultiboard}
+\href{https://drive.google.com/file/d/1ZlJ_AIXvgzdlvAawX5noBu48i03zm5dP/view?usp=sharing}{Link immagine}
+%\begin{figure}[H]
+ %   \centering
+  %      \includegraphics[scale=0.5]{/home/rib/varie/ultiabroad.png}
+   %     \label{ultiabroad}
+%\end{figure}
+
+\paragraph{Render 3d}
+\href{https://drive.google.com/file/d/1EMIzjUSU50ij58dLTjCctJGQM4YIgIii/view?usp=sharing}{Link immagine}
+%\begin{figure}[H]
+ %   \centering
+  %      \includegraphics[scale=0.5]{/home/rib/varie/3dboard.png}
+   %     \label{3d}
+%\end{figure}
+\subsection{Preventivo}
+% ======================================== Tabella ========================================    
+    \begin{center}
+        \begin{tabular}{| c | c | c | c| c |c|} 
         \hline
-        \rowcolor{BurntOrange} Codice prodotto & Descrizione & Quantità & Prezzo & Totale\\ [0.5ex] 
+        \rowcolor{BurntOrange} Codice prodotto & Dispositivo & Descrizione & Quantità & Prezzo & Totale\\ [0.5ex] 
         \hline
-        \rowcolor{Peach} 13dwer & groda & 8 & 8.88 & 64\\
+        \rowcolor{Peach} prova & prova & prova & 8 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot} 13dwer & groda & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} prova & prova & prova & 8 & 8.88 & 64\\
         \hline
-        \rowcolor{Peach} 13dwer & groda & 8 & 8.88 & 64\\
+        \rowcolor{Peach} prova & prova &  prova & 8 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot}13dwer & groda & 8 & 8.88 & 64\\
+        \rowcolor{Apricot}prova & prova & prova & 8 & 8.88 & 64\\
         \hline
-        \rowcolor{Peach} 13dwer & groda & 8 & 8.88 & 64\\
+        \rowcolor{Peach} prova & prova & prova & 8 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot} 13dwer & groda & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} prova & prova & prova & 8 & 8.88 & 64\\
         \hline
    \end{tabular}
-   \\
    \vskip 2mm
    \begin{tabular}[h]{|c|c|}
        \hline
@@ -88,29 +130,5 @@
        \hline
    \end{tabular}
    \end{center}
-
-\section{allegati}
-\paragraph{Schema di multisim}
-\href{https://drive.google.com/file/d/1VOPnspiu-4T2ZOR6uaUWNH1DUEd0fUcg/view?usp=sharing}{Link immagine}
-\begin{figure}[H]
-    \centering
-        \includegraphics[scale=0.5]{/home/rib/varie/multisimp.png}
-        \label{multisimp}
-\end{figure}
-
-\paragraph{Schema di Ultiboard}
-\href{https://drive.google.com/file/d/1ZlJ_AIXvgzdlvAawX5noBu48i03zm5dP/view?usp=sharing}{Link immagine}
-\begin{figure}[H]
-    \centering
-        \includegraphics[scale=0.5]{/home/rib/varie/ultiabroad.png}
-        \label{ultiabroad}
-\end{figure}
-
-\paragraph{Render 3d}
-\href{https://drive.google.com/file/d/1EMIzjUSU50ij58dLTjCctJGQM4YIgIii/view?usp=sharing}{Link immagine}
-\begin{figure}[H]
-    \centering
-        \includegraphics[scale=0.5]{/home/rib/varie/3dboard.png}
-        \label{3d}
-\end{figure}
+%======================================== Fine Tabella ========================================
 \end{document}
