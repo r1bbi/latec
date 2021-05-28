@@ -28,10 +28,10 @@
 \tikzset{
   basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
   root/.style   = {basic, rounded corners=2pt, thin, align=center,
-                   fill=orange!70},
-  level 2/.style = {basic, rounded corners=6pt, thin,align=center, fill=orange!50,
+                   fill=orange!80,},
+  level 2/.style = {basic, rounded corners=6pt, thin,align=center, fill=orange!60,
                    text width=8em},
-  level 3/.style = {basic, thin, align=left, fill=orange!20, text width=6.5em}
+  level 3/.style = {basic, thin, align=left, fill=orange!30, text width=6.5em}
 }
 %===================links=================
 \usepackage{hyperref}
@@ -95,7 +95,9 @@ Sono state seguite per l'aspetto progettuale le norme \href{https://my.ceinorme.
 Abbiamo usato \textit{Multisim}[\ref{multisim}] per la seconda parte di progettazione, appunto quella che riguarda l'inizio della concretizzazione
 degli schemi elettrici.\\
 Infatti con questo software si opera sullo stadio precedente alla progettazione del pcb, si va soprattutto a stabilire i componenti e a scegliere i vari componenti virtuali
-in base alla loro piedinatura e spazio occupato, in questa fase vengono anche implemantati i collegamenti ideali tra i vari componenti che poi verranno implementati sotto forma di piste. 
+in base alla loro piedinatura e spazio occupato, in questa fase vengono anche implemantati i collegamenti ideali tra i vari componenti che poi verranno implementati sotto forma di piste.\\
+Dopo aver finito la progettazione su multisim si è esportato il file su Ultiboard[\ref{ultiabroad}] dove viene svolta la parte di dispisizione componenti che di sbrogliamento.\\
+Facendo attenzione a non disporre i componenti troppo vicini per evitare fenomeni magnetici e a non sovrapporre i componenti o disporli in modo errato ossia inclinati non in modo ortogonale.  
 % =============== Progettazione, scelta componenti e dimensionamento ===============
 \section{Progettazione, scelta componenti e dimensionamento}
 La parte di progettazione iniziale della scheda, ossia quella teorica dove si vanno a trovare idealmente i componenti che andranno a comporre la scheda è stata svolta dai professori,
@@ -104,8 +106,13 @@ Per dimensionare l'aletta di raffreddamento \textit{Codice aletta} è stata usat
 \begin{center}
 $R_{s-a}=\frac{(Tmax-Ta)}{Pd-R_{c-s}-R_{j-c}}$\\
 \end{center}
+\noindent
 Dove \textit{$R_{c-s}$} è la R termica tra case e disspatore, \textit{$R_{j-c}$} è la R termica tra chip e case,\\ \textit{$R_{s-a}$} è la R termica tra dissipatore e ambiente.\\
 \subsection{Struttura della scheda}
+La scheda è divisa in 3 parti principali che gestiscono vari processi. Trascurando i collegamenti tra di loro si possono isolare facilmente,
+soprattutto la loro divisione è evidente nel primo progetto[\ref{prog}] perché sono divise tra di loro graficamente.\\
+Nello schema seguente si va a dividere queste 3 sezioni in modo da capire le loro funzioni in un quadro generale.\\
+
 \begin{figure}[!h]
     \begin{center}
         \begin{tikzpicture}[
@@ -118,7 +125,7 @@ Dove \textit{$R_{c-s}$} è la R termica tra case e disspatore, \textit{$R_{j-c}$
           % The first level, as children of the initial tree
             child {node[level 2] (c1) {Alimentazione}}
             child {node[level 2] (c2) {24V input}}
-            child {node[level 2] (c3) {24v - 240V output}};
+            child {node[level 2] (c3) {24V- 240V output}};
           
           % The second level, relatively positioned nodes
           \begin{scope}[every node/.style={level 3}]
@@ -131,11 +138,9 @@ Dove \textit{$R_{c-s}$} è la R termica tra case e disspatore, \textit{$R_{j-c}$
           \node [below of = c21] (c22) {Digital input arduino};
           
           
-          \node [below of = c3, xshift=15pt] (c31) {????};
-          \node [below of = c31] (c32) {6 24V input};
-          \node [below of = c32] (c33) {relè};
-          \node [below of = c33] (c34) {base transistor};
-          \node [below of = c34] (c35) {digital output};
+          \node [below of = c3, xshift=15pt] (c31) {6 24V input}
+          \node [below of = c31] (c32) {digital output};
+          
           \end{scope}
           
           % lines from each level 1 node to every one of its "children"
@@ -152,13 +157,11 @@ Dove \textit{$R_{c-s}$} è la R termica tra case e disspatore, \textit{$R_{j-c}$
           \foreach \value in {1,...,5}
             \draw[->] (c3.195) |- (c31);
             \draw[->] (c3.195) |- (c32);
-            \draw[->] (c3.195) |- (c33);
-            \draw[->] (c3.195) |- (c34);
-            \draw[->] (c3.195) |- (c35);
-          
           
           \end{tikzpicture}
     \end{center}
+    \label{Schema struttura}
+    \caption{Schema sezioni Shield}
 \end{figure}
 % =============== allegati ===============
 \section{allegati} 
@@ -205,17 +208,31 @@ Dove \textit{$R_{c-s}$} è la R termica tra case e disspatore, \textit{$R_{j-c}$
         \hline
         \rowcolor{BurntOrange} Codice prodotto & Dispositivo & Descrizione & Quantità & Prezzo & Totale\\ [0.5ex] 
         \hline
-        \rowcolor{Peach} prova & prova & prova & 8 & 8.88 & 64\\
+        \rowcolor{Peach} prova & Relè & prova & 8 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot} prova & prova & prova & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} prova & Dissipatore & prova & 8 & 8.88 & 64\\
         \hline
-        \rowcolor{Peach} prova & prova &  prova & 8 & 8.88 & 64\\
+        \rowcolor{Peach} 4N25 & Fototransistor &  prova & 8 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot}prova & prova & prova & 8 & 8.88 & 64\\
+        \rowcolor{Apricot}prova & Led & diodo Led verde & 7 & 8.88 & 64\\
         \hline
-        \rowcolor{Peach} prova & prova & prova & 8 & 8.88 & 64\\
+        \rowcolor{Peach} 02B2.2 & Diodo Zener & prova & 5 & 8.88 & 64\\
         \hline
-        \rowcolor{Apricot} prova & prova & prova & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} prova & Diodo & prova & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Peach} prova & Resistore 330\Omega & prova & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Apricot} prova & Resistore 1.5k\Omega & prova & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Peach} prova & Resistore 560 \Omega & prova & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Apricot} prova &  & Resistore 3.3 k\Omega & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Peach} prova & Condensatore 10 {\mu}F & prova & 8 & 8.88 & 64\\
+        \hline
+        \rowcolor{Apricot} prova & Condensatore 22 {\mu}F & prova & 8 & 8.88 & 64\\
+        \rowcolor{Peach} prova & Fusibile & prova & 8 & 8.88 & 64\\
+        \rowcolor{Apricot} LM7809CT & Resistore 560 \Omega & prova & 8 & 8.88 & 64\\
         \hline
    \end{tabular}
    \vskip 2mm
@@ -228,6 +245,6 @@ Dove \textit{$R_{c-s}$} è la R termica tra case e disspatore, \textit{$R_{j-c}$
 %======================================== Fine Tabella ========================================
    \section{Bibliografia}
    \begin{itemize}
-       \item \href{https://datasheetspdf.com/pdf/766811/ThinkiSemiconductor/LM78XX/1}{LM78 datasheet}
+       \item \href{https://datasheetspdf.com/pdf/766811/ThinkiSemiconductor/LM78XX/1}{LM7809CT datasheet}
    \end{itemize}
 \end{document}
