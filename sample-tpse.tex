@@ -2,7 +2,7 @@
 % Base per i documenti  
 \documentclass{article}
 % ------------ pacchetti necessari ----------------
-\usepackage[a4paper, total={6in, 8in}]{geometry} % formattazione decente della pagina
+\usepackage[a4paper, total={6in, 8in},margin=1in]{geometry} % formattazione decente della pagina
 \usepackage{graphicx}                            % need for figure
 \usepackage{amsmath}
 \usepackage{amsfonts}                            % if you want the fonts
@@ -15,23 +15,47 @@
 \usepackage[hang,flushmargin,bottom]{footmisc}   % footnote format
 \usepackage{fancyhdr, lastpage}
 \usepackage{titlesec}
+\usepackage[table,dvipsnames]{xcolor}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
 \titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}	% required for heading numbering style
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+%===================links=================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=Sepia,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Arduino Shield},
+    pdfpagemode=FullScreen,
+    }
 %===================inizio pagina del titolo=================
 \begin{document}
     \begin{titlepage}
 \begin{flushleft}
 \vspace{3\baselineskip}
 
-\huge{\textbf{Esercitazione Progettuale Arduino}}
+\Huge{\textbf{Progetto scheda di interfaccia per Arduino}}
 \vfill
 \LARGE Enrico Ribiani\\
 \LARGE 3AUB\\
 \vfill
-\huge{ITT M. BUONARROTI 22-03-2021}
+\huge{ITT M. BUONARROTI 24-05-2021}
 
 %=============== fine pagina titolo ===============
 \end{flushleft}
 \end{titlepage}
+%=============== Intestazione ===============
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{Enrico Ribiani}
+\fancyhead[LO,RE]{3AUB}
 
+%\fancyhead[CO,CE]{sezione \thesection}%??????????????''
+%=============== fine Intestazione ===============
 
-\end{document}
+\tableofcontents
+assssssss
+\vskip 3cm
