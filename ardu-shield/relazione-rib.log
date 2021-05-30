@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.26)  28 MAY 2021 15:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.26)  30 MAY 2021 11:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,8 +8,8 @@ entering extended mode
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
-(/usr/share/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
 \c@part=\count179
 \c@section=\count180
@@ -586,8 +586,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 )
 \Hy@SectionHShift=\skip66
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 46.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 48.
+Package hyperref Info: Option `colorlinks' set `true' on input line 47.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 49.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -597,24 +597,24 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 ) (/home/rib/Documenti/latec/ardu-shield/relazione-rib.aux)
 \openout1 = `relazione-rib.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
+LaTeX Font Info:    ... okay on input line 49.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -635,12 +635,12 @@ LaTeX Font Info:    ... okay on input line 48.
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=10.0pt
+* \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=65.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -671,8 +671,8 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 48.
-Package hyperref Info: Link coloring ON on input line 48.
+(lastpage)             ! on input line 49.
+Package hyperref Info: Link coloring ON on input line 49.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -682,9 +682,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count309
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 49.
+LaTeX Info: Redefining \pageref on input line 49.
+LaTeX Info: Redefining \nameref on input line 49.
  (/home/rib/Documenti/latec/ardu-shield/relazione-rib.out) (/home/rib/Documenti/latec/ardu-shield/relazione-rib.out)
 \@outlinefile=\write4
 \openout4 = `relazione-rib.out'.
@@ -692,11 +692,18 @@ LaTeX Info: Redefining \nameref on input line 48.
 </home/rib/varie/logo.png, id=75, 343.2825pt x 98.3675pt>
 File: /home/rib/varie/logo.png Graphic file (type png)
 <use /home/rib/varie/logo.png>
-Package pdftex.def Info: /home/rib/varie/logo.png  used on input line 53.
+Package pdftex.def Info: /home/rib/varie/logo.png  used on input line 54.
 (pdftex.def)             Requested size: 274.62636pt x 78.69408pt.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/rib/varie/logo.png>] (/home/rib/Documenti/latec/ardu-shield/relazione-rib.toc
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/rib/varie/logo.png>]
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 70.
+
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless on input line 71.
+
+(/home/rib/Documenti/latec/ardu-shield/relazione-rib.toc
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 3.
  (/usr/share/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
@@ -713,75 +720,143 @@ LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 
  (/usr/share/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 )
 \tf@toc=\write5
 \openout5 = `relazione-rib.toc'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--84
+Underfull \hbox (badness 10000) in paragraph at lines 79--85
 
  []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.98 \subsection{Software}
-                           [1]
-Underfull \hbox (badness 10000) in paragraph at lines 122--125
+l.95 \section{Strumenti utilizzati}
+                                    [1]
+Underfull \hbox (badness 10000) in paragraph at lines 108--111
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--124
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [2]
-</home/rib/varie/progetto-ini.pdf, id=116, 845.1575pt x 598.235pt>
+</home/rib/varie/pista.png, id=118, 442.65375pt x 296.60812pt>
+File: /home/rib/varie/pista.png Graphic file (type png)
+<use /home/rib/varie/pista.png>
+Package pdftex.def Info: /home/rib/varie/pista.png  used on input line 127.
+(pdftex.def)             Requested size: 265.59428pt x 177.96623pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 189--191
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[3 </home/rib/varie/pista.png (PNG copy)>]
+</home/rib/varie/progetto-ini.pdf, id=129, 845.1575pt x 598.235pt>
 File: /home/rib/varie/progetto-ini.pdf Graphic file (type pdf)
 <use /home/rib/varie/progetto-ini.pdf>
-Package pdftex.def Info: /home/rib/varie/progetto-ini.pdf  used on input line 183.
+Package pdftex.def Info: /home/rib/varie/progetto-ini.pdf  used on input line 201.
 (pdftex.def)             Requested size: 422.57771pt x 299.11676pt.
-</home/rib/varie/multisimp-nobkg.png, id=118, 424.58624pt x 333.49594pt>
+</home/rib/varie/multisimp-nobkg.png, id=131, 424.58624pt x 333.49594pt>
 File: /home/rib/varie/multisimp-nobkg.png Graphic file (type png)
 <use /home/rib/varie/multisimp-nobkg.png>
-Package pdftex.def Info: /home/rib/varie/multisimp-nobkg.png  used on input line 192.
+Package pdftex.def Info: /home/rib/varie/multisimp-nobkg.png  used on input line 210.
 (pdftex.def)             Requested size: 212.2926pt x 166.74756pt.
- [1 </home/rib/varie/progetto-ini.pdf>]
-</home/rib/varie/image.png, id=131, 999.735pt x 438.63875pt>
+</home/rib/varie/image.png, id=133, 999.735pt x 438.63875pt>
 File: /home/rib/varie/image.png Graphic file (type png)
 <use /home/rib/varie/image.png>
-Package pdftex.def Info: /home/rib/varie/image.png  used on input line 201.
+Package pdftex.def Info: /home/rib/varie/image.png  used on input line 219.
 (pdftex.def)             Requested size: 299.9228pt x 131.59264pt.
 
-Overfull \hbox (28.28828pt too wide) in paragraph at lines 216--257
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[1 </home/rib/varie/progetto-ini.pdf> </home/rib/varie/multisimp-nobkg.png>]
+Overfull \hbox (110.68315pt too wide) in paragraph at lines 234--277
  [] 
  []
 
-[2 </home/rib/varie/multisimp-nobkg.png> </home/rib/varie/image.png>]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 267.
- (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 290.
+(/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) 
+)
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[2 </home/rib/varie/image.png>] 
 AED: lastpage setting LastPage
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
 [3] (/home/rib/Documenti/latec/ardu-shield/relazione-rib.aux)
 Package rerunfilecheck Info: File `relazione-rib.out' has not changed.
 (rerunfilecheck)             Checksum: 4ACA64BA80F7F611D16D96A79B904A07;1827.
  ) 
 Here is how much of TeX's memory you used:
- 23392 strings out of 478994
- 445265 string characters out of 5864751
- 785199 words of memory out of 5000000
- 40383 multiletter control sequences out of 15000+600000
- 435187 words of font info for 87 fonts, out of 8000000 for 9000
+ 23407 strings out of 478994
+ 445509 string characters out of 5864751
+ 783762 words of memory out of 5000000
+ 40392 multiletter control sequences out of 15000+600000
+ 436653 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,12n,88p,488b,1167s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/rib/Documenti/latec/ardu-shield/relazione-rib.pdf (6 pages, 267892 bytes).
+ 87i,11n,88p,488b,1167s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on /home/rib/Documenti/latec/ardu-shield/relazione-rib.pdf (7 pages, 303013 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 207 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
