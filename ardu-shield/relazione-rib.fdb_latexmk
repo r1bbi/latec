@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1622369919 "/home/rib/Documenti/latec/ardu-shield/relazione-rib.tex" "/home/rib/Documenti/latec/ardu-shield/relazione-rib.pdf" "relazione-rib" 1622369921
-  "/home/rib/Documenti/latec/ardu-shield/relazione-rib.aux" 1622369921 3656 bc123e1732edaa2ab3b31e26157b7bdc ""
-  "/home/rib/Documenti/latec/ardu-shield/relazione-rib.tex" 1622369919 16388 afd006c5aa22d79568a9224707d92840 ""
+["pdflatex"] 1622389612 "/home/rib/Documenti/latec/ardu-shield/relazione-rib.tex" "/home/rib/Documenti/latec/ardu-shield/relazione-rib.pdf" "relazione-rib" 1622389615
+  "/home/rib/Documenti/latec/ardu-shield/relazione-rib.aux" 1622389615 3656 bc123e1732edaa2ab3b31e26157b7bdc ""
+  "/home/rib/Documenti/latec/ardu-shield/relazione-rib.tex" 1622389612 16393 a8efcdee47676e8e37b67e508633f613 ""
   "/home/rib/varie/image.png" 1622187227 81354 f229381c9efcd7b983ca803d3a6f48ce ""
   "/home/rib/varie/logo.png" 1615884265 69488 22e24cf68e486dd6cf1ffbccbfe5f286 ""
   "/home/rib/varie/multisimp-nobkg.png" 1622187322 64873 fc28ffc7559657dc82281c05ef73eb47 ""
@@ -201,15 +201,15 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1617738065 39911 2da6c67557ec033436fe5418a70a8a61 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1622035705 5065252 bcee0692f299aea3b1d13d4b7b7296ae ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1622035690 2812673 7633fa7d26ee97f0788304b09ff9d275 ""
-  "relazione-rib.aux" 1622369921 3656 bc123e1732edaa2ab3b31e26157b7bdc "pdflatex"
-  "relazione-rib.out" 1622369921 1827 4aca64ba80f7f611d16d96a79b904a07 "pdflatex"
-  "relazione-rib.tex" 1622369919 16388 afd006c5aa22d79568a9224707d92840 ""
-  "relazione-rib.toc" 1622369921 1161 d6b34e4f51b54c86a8991799653b226d "pdflatex"
+  "relazione-rib.aux" 1622389615 3656 bc123e1732edaa2ab3b31e26157b7bdc "pdflatex"
+  "relazione-rib.out" 1622389615 1827 4aca64ba80f7f611d16d96a79b904a07 "pdflatex"
+  "relazione-rib.tex" 1622389612 16393 a8efcdee47676e8e37b67e508633f613 ""
+  "relazione-rib.toc" 1622389615 1161 d6b34e4f51b54c86a8991799653b226d "pdflatex"
   (generated)
-  "relazione-rib.pdf"
+  "relazione-rib.toc"
   "relazione-rib.aux"
   "/home/rib/Documenti/latec/ardu-shield/relazione-rib.log"
-  "relazione-rib.out"
   "relazione-rib.log"
-  "relazione-rib.toc"
   "/home/rib/Documenti/latec/ardu-shield/relazione-rib.pdf"
+  "relazione-rib.pdf"
+  "relazione-rib.out"
