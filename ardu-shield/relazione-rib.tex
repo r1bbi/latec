@@ -125,7 +125,7 @@ Le piste vengono dimensionate in base alla temperatura in funzione alla corrente
 \begin{figure}[H]
   \centering
   \includegraphics[scale=0.6]{/home/rib/varie/pista.png}
-  \caption{\href{https://www.vincenzov.net/tutorial/stampati/spessorepiste.htm}{Grafico dimensionamento piste}}
+  \caption{Grafico dimensionamento piste[\ref{pistepng}]}
   \label{lepistelepistelepiste}
 \end{figure}
 \noindent
@@ -231,7 +231,8 @@ Tutte e tre le parti vanno ad interfacciarsi con Arduino, dal momento che è lui
 \subsection{Preventivo componenti}
 % ======================================== Tabella ========================================    
     \begin{center}
-        \begin{tabular}{| c | c | c | c| c |c|} 
+      \footnotesize
+        \begin{tabular}{| c | c | c | c| c |c|}
         \hline
         \rowcolor{BurntOrange} Codice prodotto & Dispositivo & Descrizione & Quantità & Prezzo & Totale\\ [0.5ex] 
         \hline
@@ -286,6 +287,7 @@ Tutte e tre le parti vanno ad interfacciarsi con Arduino, dal momento che è lui
 \vskip 4mm 
 \section{Bibliografia}
    \label{sec:bibliografia}
+   Datasheets:
    \begin{itemize}
        \item \href{https://datasheetspdf.com/pdf/766811/ThinkiSemiconductor/LM78XX/1}{LM7809CT datasheet}
        \item \href{https://www.alldatasheet.com/datasheet-pdf/pdf/2846/MOTOROLA/4N25.html}{4N25 datasheet}
@@ -293,11 +295,16 @@ Tutte e tre le parti vanno ad interfacciarsi con Arduino, dal momento che è lui
        \item \href{https://it.farnell.com/on-semiconductor/1n4001g/diodo-standard-1a-do-41/dp/1458986?gclid=CjwKCAjwqcKFBhAhEiwAfEr7zUiXu7byYKAv4I9jzqX1HOrYwDHbs8iKbdpKXM1QnqVZ_xLJMfnMjxoCd9kQAvD_BwE&mckv=s_dc|pcrid|522005845083|kword|1n4001g|match|p|plid||slid||product||pgrid|122762829255|ptaid|kwd-10795764537|&CMP=KNC-GIT-GEN-SKU-MDC-Semiconductors}{1N4001G datasheet}
        \item \href{https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6e.pdf}{G6E-134P-US datasheet}
        \item \href{http://www.farnell.com/datasheets/2240125.pdf}{1N6267A datasheet}
-       \item \href{https://www.vincenzov.net/tutorial/stampati/spessorepiste.htm}{dimensionamento piste}
-       \item controllo prezzi \begin{itemize}
-            \item \href{www.mouser.it}{mouser}
-             \item \href{amazon.it}{amazon}
-            \item \href{https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/G6E-134P-ST-US-DC9/369175}{digikey}
        \end{itemize} 
-   \end{itemize}
+       Controllo prezzi:
+       \begin{itemize}
+            \item \href{www.mouser.it}{Mouser}
+             \item \href{amazon.it}{Amazon}
+            \item \href{https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/G6E-134P-ST-US-DC9/369175}{Digikey}
+       \end{itemize} 
+       Fonti varie:
+       \begin{itemize}
+         \item \href{https://www.vincenzov.net/tutorial/stampati/spessorepiste.htm}{Dimensionamento piste}
+         \item \href{https://www.ne555.it/dissipatori-calore-calcolo-dimensioni/}{Dimensionamento dissipatore} \label{pistepng}
+       \end{itemize}
 \end{document}

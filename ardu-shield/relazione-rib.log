@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.26)  30 MAY 2021 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/Arch Linux) (preloaded format=pdflatex 2021.5.26)  30 MAY 2021 12:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -816,11 +816,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [1 </home/rib/varie/progetto-ini.pdf> </home/rib/varie/multisimp-nobkg.png>]
-Overfull \hbox (110.68315pt too wide) in paragraph at lines 234--277
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 235.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 235.
+
+Overfull \hbox (29.2079pt too wide) in paragraph at lines 235--278
  [] 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 290.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 292.
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
@@ -845,18 +852,18 @@ Package rerunfilecheck Info: File `relazione-rib.out' has not changed.
 (rerunfilecheck)             Checksum: 4ACA64BA80F7F611D16D96A79B904A07;1827.
  ) 
 Here is how much of TeX's memory you used:
- 23407 strings out of 478994
- 445509 string characters out of 5864751
- 783762 words of memory out of 5000000
- 40392 multiletter control sequences out of 15000+600000
- 436653 words of font info for 91 fonts, out of 8000000 for 9000
+ 23440 strings out of 478994
+ 445954 string characters out of 5864751
+ 783504 words of memory out of 5000000
+ 40421 multiletter control sequences out of 15000+600000
+ 449427 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  87i,11n,88p,488b,1167s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on /home/rib/Documenti/latec/ardu-shield/relazione-rib.pdf (7 pages, 303013 bytes).
+Output written on /home/rib/Documenti/latec/ardu-shield/relazione-rib.pdf (7 pages, 302957 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 208 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  26 named destinations out of 1000 (max. 500000)
  222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
