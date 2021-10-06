@@ -1,0 +1,12 @@
+\contentsline {section}{\numberline {1}Scopo:Verificare il comportamento di un bipolo ohmico-capacitivo sperimentalmente.}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Materiale}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Strumenti}{1}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}Schema}{2}{subsubsection.1.2.1}%
+\contentsline {section}{\numberline {2}Cenni teorici}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Generalità bipolo RC}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Previsione comportamento}{3}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Procedimento/Analisi}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Tabelle}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Calcoli}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Conclusioni}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Diagramma vettoriale}{4}{subsection.4.1}%
