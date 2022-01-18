@@ -1,0 +1,104 @@
+% ============================ Enrico Ribiani 16-03-2021 ====================================================================
+% Base per i documenti  
+\documentclass[12pt]{article}
+% ------------ pacchetti necessari ----------------
+\usepackage[a4paper, total={6in, 8in},margin=1in]{geometry} % formattazione decente della pagina
+\usepackage{graphicx}                            % need for figure
+\usepackage{amsmath}
+\usepackage{amsfonts}                            % if you want the fonts
+\usepackage{amssymb}                             % if you want extra symbols
+\usepackage{graphicx}  
+\renewcommand{\figurename}{Figura}  
+\renewcommand{\contentsname}{Indice}                        % need for figures
+\usepackage{mathptmx}
+\usepackage{float}                               % serve per mettere tabelle e immagini dove si vuole 
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[hang,flushmargin,bottom]{footmisc}   % footnote format
+\usepackage{fancyhdr, lastpage}
+\usepackage{titlesec}
+\usepackage[table,dvipsnames]{xcolor}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand*\contentsname{Indice}
+\titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}	% required for heading numbering style
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+%\usepackage{siunitx}
+%\usepackage{tikz}
+\usepackage{circuitikz}
+%\usepackage[siunitx]{circuitikz}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{angles,quotes}
+\usepackage{placeins}
+
+\usepackage{wasysym}
+%===================links=================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=Sepia,
+    filecolor=Green,      
+    urlcolor=Cyan,
+    pdftitle={SAMPLE},
+    pdfpagemode=FullScreen,
+    }
+%===================inizio pagina del titolo=================
+\begin{document}
+    \begin{titlepage}
+    \begin{center}
+% ------------------ inizio immagine logo ----------
+\begin{figure}
+    \centering
+    \includegraphics{~/varie/logo.png}
+    \label{fig:logo}
+\end{figure}
+% ------------------ fine immagine logo ----------
+% ------------------ fine immagine logo ----------
+-------------------------------------------------------------------------------------\\
+\vspace{2\baselineskip}
+\large Enrico Ribiani\\
+\large 4AUB\\
+\vfill
+
+\Huge{\textbf{Avviatore M.A.T}}\\
+\vfill
+
+\LARGE{Relazione n°2}\\
+\vfill
+\large{22-01-2022}
+\end{center}
+%=============== fine pagina titolo ===============
+\end{titlepage}
+\tableofcontents
+\vskip 1cm
+\section{Introduzione}
+Durante le ore di laboratorio di TPSE ogni studente è stato incaricato di disegnare e montare un quadro elettrico in grado di far avviare e fermare correttamente un motore asincrono trifase avendo a disposizione il software di disegno \textit{SPAC Automazione} e avendo i componenti elencati nella sezione ~\ref{Componenti}.\\
+Sia che il disegno che il montaggio e il collaudo sono stati eseguiti in 4 sessioni di laboratorio da due ore e 30 l'una per poi concludere scrivendo una relazione tecnica.
+\section{Funzionamento}
+Il circuito era molto semplice in quanto era la prima volta che la classe svolgeva un esperieza simile, infatti l'utilizzo era limitato a far partire il motore e a farlo fermare, il quadro era dotato di tre spie, una verde che si illuminava quando il motore era alimentato, una gialla accesa quando il relè termico entrava in funzione, e una \colorbox{BrickRed}{rossa quando il motore era in funzione}.\\
+Per comandare il motore erano necessari infatti solamente due pulsanti, uno di start(normalmente aperto) e uno di stop(normalmente chiuso), ovviamente uno serviva a far partire il motore e l'altro a fermarlo quando in funzione facendo aprire i contatti che lo collegavano al motore disattivando la bobina ausiliaria.\\
+Il motore era dotato di tutte le protezioni già montate come fusibili, relè termici, sezionatori.\\
+\section{Componenti}
+\label{Componenti}
+\begin{itemize}
+    \item Contattore [Groda7472347]
+    \item Pulsante/spia gialla 
+    \item Pulsante/spia rosso
+    \item Pulsante/spia verde 
+    \item Morsettiere da X
+    \item Morsettiera spie da Y
+\end{itemize}
+\section{Materiali}
+\begin{itemize}
+    \item Filo da \diameter1,5mm  di colore rosa
+    \item Filo da \diameter1 mm  di colore grigio
+\end{itemize}
+\section{Conclusioni}
+
+\newpage
+\section{Allegati}
+
+\end{document}
