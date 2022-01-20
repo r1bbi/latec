@@ -78,13 +78,17 @@
 Durante le ore di laboratorio di TPSE ogni studente è stato incaricato di disegnare e montare un quadro elettrico in grado di far avviare e fermare correttamente un motore asincrono trifase avendo a disposizione il software di disegno \textit{SPAC Automazione} e avendo i componenti elencati nella sezione ~\ref{Componenti}.\\
 Sia che il disegno che il montaggio e il collaudo sono stati eseguiti in 4 sessioni di laboratorio da due ore e 30 l'una per poi concludere scrivendo una relazione tecnica.
 \section{Funzionamento}
-Il circuito era molto semplice in quanto era la prima volta che la classe svolgeva un esperieza simile, infatti l'utilizzo era limitato a far partire il motore e a farlo fermare, il quadro era dotato di tre spie, una verde che si illuminava quando il motore era alimentato, una gialla accesa quando il relè termico entrava in funzione, e una \colorbox{BrickRed}{rossa quando il motore era in funzione}.\\
-Per comandare il motore erano necessari infatti solamente due pulsanti, uno di start(normalmente aperto) e uno di stop(normalmente chiuso), ovviamente uno serviva a far partire il motore e l'altro a fermarlo quando in funzione facendo aprire i contatti che lo collegavano al motore disattivando la bobina ausiliaria.\\
+Il circuito era molto semplice in quanto era la prima volta che la classe svolgeva un esperieza simile, infatti l'utilizzo era limitato a far partire il motore e a farlo fermare, il quadro era dotato di tre spie, una verde che si illuminava quando il motore era alimentato, una gialla accesa quando il relè termico entrava in funzione, e una rossa quando il motore era in funzione.\\
+%Per comandare il motore erano necessari infatti solamente due pulsanti, uno di start(normalmente aperto) e uno di stop(normalmente chiuso), ovviamente uno serviva a far partire il motore e l'altro a fermarlo quando in funzione facendo aprire i contatti che lo collegavano al motore disattivando la bobina ausiliaria.\\
+Il pulsante di start serve ad alimentare la bobina che va a chiudere tutti i contatti andando a connettere il motore alle tre fasi, al contrario invece il pulsante di stop se premuto va a sconnettere la bobina dall'alimentazione che farà lo stesso con il motore, un altra causa per il quale il motore una volta azionato si spegne è l'attivazione del relè termico che spegne la bobina facendo aprire i contatti.
 Il motore era dotato di tutte le protezioni già montate come fusibili, relè termici, sezionatori.\\
+Il circuito avviatore ha il compito di mettere in moto il motore e di far passare per un determinato lasso temporale le sovracorrenti necessarie all'avviamento, per questo motivo il motore necessita di varie protezioni previste dalla norma \textit{CEI EN 60 947}.\\
+
+
 \section{Componenti}
 \label{Componenti}
 \begin{itemize}
-    \item Contattore [Groda7472347]
+    \item Contattore %[Groda7472347]
     \item Pulsante/spia gialla 
     \item Pulsante/spia rosso
     \item Pulsante/spia verde 
@@ -96,9 +100,8 @@ Il motore era dotato di tutte le protezioni già montate come fusibili, relè te
     \item Filo da \diameter1,5mm  di colore rosa
     \item Filo da \diameter1 mm  di colore grigio
 \end{itemize}
-\section{Conclusioni}
-
-\newpage
 \section{Allegati}
+\newpage
+
 
 \end{document}
