@@ -1,0 +1,120 @@
+% ============================ Enrico Ribiani 16-03-2021 ====================================================================
+% Base per i documenti  
+\documentclass[12pt]{article}
+% ------------ pacchetti necessari ----------------
+\usepackage[a4paper, total={6in, 8in},margin=1in]{geometry} % formattazione decente della pagina
+\usepackage{graphicx}                            % need for figure
+\usepackage{amsmath}
+\usepackage{amsfonts}                            % if you want the fonts
+\usepackage{amssymb}                             % if you want extra symbols
+\usepackage{graphicx}  
+\renewcommand{\figurename}{Figura}  
+\renewcommand{\contentsname}{Indice}                        % need for figures
+\usepackage{mathptmx}
+\usepackage{float}                               % serve per mettere tabelle e immagini dove si vuole 
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[hang,flushmargin,bottom]{footmisc}   % footnote format
+\usepackage{fancyhdr, lastpage}
+\usepackage{titlesec}
+\usepackage[table,dvipsnames]{xcolor}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand*\contentsname{Indice}
+\titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}	% required for heading numbering style
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+%\usepackage{siunitx}
+%\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{multicol}
+%\usepackage[siunitx]{circuitikz}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{angles,quotes}
+\usepackage{placeins}
+
+\usepackage{wasysym}
+%===================links=================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=Sepia,
+    filecolor=Green,      
+    urlcolor=Cyan,
+    pdftitle={SAMPLE},
+    pdfpagemode=FullScreen,
+    }
+%===================inizio pagina del titolo=================
+\begin{document}
+    \begin{titlepage}
+    \begin{center}
+% ------------------ inizio immagine logo ----------
+\begin{figure}
+    \centering
+    \includegraphics{~/varie/logo.png}
+    \label{fig:logo}
+\end{figure}
+% ------------------ fine immagine logo ----------
+% ------------------ fine immagine logo ----------
+-------------------------------------------------------------------------------------\\
+\vspace{2\baselineskip}
+\large Prova n°1
+\hfill
+\large $5^a$   AUB\\
+\begin{flushleft}
+    \large Enrico Ribiani\\
+    \large Daniel Graziadei\\
+    \large Gruppo 11\\
+\end{flushleft}
+
+
+\vfill
+
+\Huge{\textbf{Amplificatore invertente e non invertente}}\\
+\vfill
+\vfill
+\large{22-01-2022}
+\end{center}
+%=============== fine pagina titolo ===============
+\end{titlepage}
+\tableofcontents
+\vskip 1cm
+\section{Scopo}
+%
+\section{Funzionamento}
+
+\section{Schema}
+
+\section{Materiale e Strumenti}
+\label{Materiale e Strumenti}
+\begin{multicols}{2}
+    \begin{itemize}
+    \item test
+    \item test 2
+    \end{itemize}
+    \vfill\null
+    \columnbreak
+    \begin{itemize}
+    \item test 3
+    \item test 4
+    \item test 5
+    \end{itemize}
+    \vfill\null
+    \end{multicols}
+\vspace{15pt}
+\section{Contenuti Teorici}
+
+\subsection{Descrizione della Prova}
+
+\section{Raccolta dei dati}
+
+\subsection{Tabella}
+
+\subsection{commento dei dati raccolti in tabella}
+
+\section{Elaborazione dei dati raccolti}
+
+\section{Analisi critica dei risultati e conclusioni}
+\end{document}
