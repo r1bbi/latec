@@ -60,7 +60,7 @@
 % ------------------ fine immagine logo ----------
 -------------------------------------------------------------------------------------\\
 \vspace{2\baselineskip}
-\large Prova n°2
+\large Prova n°3
 \hfill
 \large $5^a$   AUB\\
 \begin{flushleft}
@@ -88,7 +88,7 @@ e derivatore e completare i seguenti obiettivi:\\
 \noindent
 \begin{itemize}
     \item Ricavare la frequenza di taglio ($f_c$).
-    \item Determinare la tensione di uscita con $f=10f_c$ e $f=\frac{1}{10}f_c$.
+    \item Determinare la tensione di uscita con $f=10f_c$ e $f=\frac{1}{10}f_c$
     \item Validare il risultato sperimentale con i risultati teorici.
 \end{itemize}
 
@@ -123,7 +123,8 @@ Questo succede perchè a basse frequenze il condensatore diventa un circuito ape
 saturazione.\\
 Il contrario avviene con il derivatore, a basse frequenze fuonzionerà normalmente mentre ad alte frequenze
 diventerà un amplificatore invertente poichè il condensatore sarà equivalente a un corto circuito.\\
-Per il circuito integratore andremo ad osservare e comparare con i calcoli la pendenza dell'uscita.\\
+Con la configurazione a derivatore da un'onda triangolare si aspetta un'onda quadra della quale calcoleremo l'ampiezza e il valore massimo.\\
+Con la configurazione integratore invece ci si aspetta da un onda quadra un onda triangolare della quale andremo a misurare e calcolare la pendenza.\\
 \subsection{Descrizione della Prova}
 Dopo aver svolto i calcoli teorici vanno misurate le resistenze e verificato che il valore sia comparabile
 a quello riportato tramite codice colore.\\
@@ -131,37 +132,29 @@ Dopodiche viene montato il circuito sulla Breadboard segendo lo schema e si rego
 alimentazione Vcc+ e Vcc- per l’integrato.\\
 Con l’ausilio dell’oscilloscopio si visualizza l’andamento della tensione di ingresso e di uscita per 
 confrontarle e prendere i dati sperimentali.\\
-Si ripete la procedura per entrambe le configurazioni.\\
-
+Le misure con il derivatore verranno prese a $f=\frac{f_c}{10}$ mentre con l'integratore verranno prese due misure, una a $f=\frac{f_c}{10}$ e un'altra a $f=f_c \cdot 10$
 \subsection{Oscilloscopio}
 Configurazione Integratore:
 \begin{figure}[h]
     \centering
-   % \includegraphics[scale=0.1]{Iosc1.jpg}
-    \caption{Configurazione n1}
-
-    %\includegraphics[scale=0.1]{Iosc2.jpg}
-    \caption{Configurazione n1}
-
-   % \includegraphics[scale=0.1]{Iosc3.jpg}
-    \caption{Configurazione n1}
+   \includegraphics[scale=0.055]{integratore-altaf.jpg}
+    \caption{integratore $f_c \cdot 10$}
+\end{figure}
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.2]{integratore-bassaf.jpg}
+    \caption{integratore $\frac{f_c}{10}$}
 \end{figure}
 \\
 Configurazione Derivatore:
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
-    %\includegraphics[scale=0.1]{Dosc1.jpg}
-    \caption{Configurazione n1}
+    \includegraphics[scale=0.05]{derivatore.jpg}
+    \caption{Derivatore $\frac{f_c}{10}$}
 
-
-    %\includegraphics[scale=0.1]{Dosc2.jpg}
-    \caption{Configurazione n1}
-
-
-    %\includegraphics[scale=0.1]{Dosc3.jpg}
-    \caption{Configurazione n1}
 \end{figure}
 \\
+
 \subsection{Tabella}
 Valore misurato resistenze:\\
 \begin{center}
@@ -175,24 +168,24 @@ Valore misurato resistenze:\\
         \label{Valore resistenze}
 \end{center}
 \noindent
-Configurazione derivatore:\\
+Configurazione integratore:\\
 \begin{center}
     \begin{tabular}{|p{2cm} |p{2cm}|p{2cm} |p{2cm}|p{2cm} |p{2cm}|}
         \hline
-        \rowcolor{RoyalBlue} $X1$ & $X2$& $\Delta X$ & $Y1$ & $Y2$ & $\Delta Y$   \\
+        \rowcolor{RoyalBlue} $X1(V)$ & $X2(V)$& $\Delta (X)$ & $Y1(us)$ & $Y2(us)$ & $\Delta Y(us)$   \\
         \hline
-        \rowcolor{CornflowerBlue} $1,72$ & $-1,48$ & $3,2$ & $XX$ & $XX$  & $32$\\ 
+        \rowcolor{CornflowerBlue} $1,6$ & $-1,4$ & $3$ & $1$ & $33$  & $32$\\ 
         \hline
     \end{tabular}
 \end{center}
 
-Configurazione Integratore:\\
+\noindent Configurazione derivatore :\\
 \begin{center}
     \begin{tabular}{|p{2cm} |p{2cm}|}
         \hline
-        \rowcolor{RoyalBlue} $XX$ & $XX$  \\
+        \rowcolor{RoyalBlue} $v_i$ & $v_o$  \\
         \hline
-        \rowcolor{CornflowerBlue} $XX$ & $XX$  \\ 
+        \rowcolor{CornflowerBlue} $1V$ & $1.32V$  \\ 
         \hline
     \end{tabular}
     \label{Valore resistenze}
@@ -203,9 +196,20 @@ Configurazione Integratore:\\
 \section{Elaborazione dei dati raccolti}
 \subsection{Calcoli}
 Configurazione integratore:\\
-$f_t=\frac{1}{2 \pi R_F C}=\frac{1}{2 \pi 22 k\Omega 4.7\mu n }=1.54KHz$
+$f_c=\frac{1}{2 \pi R_F C}=\frac{1}{2 \pi 22 k\Omega 4.7\mu n }=1.54KHz$\\
+\\
+\textit{Pendenza}=$-\frac{1}{R_G}=-\frac{1}{2,2k\Omega \cdot 4,7 \mu n}=-96711 $\\
+\\
+\textit{Pendenza}=$\frac{\Delta Y}{\Delta X}=\frac{1.6-(-1.4)}{(1\cdot 10^{-6})-(33\cdot 10^{-6})}$=-93750\\
+\\
+Discrepanza=$\frac{Val. sperimentale}{Val. calcolato}=\frac{-96711}{-93750}=1.03$\\
+\\
+\\
 Configurazione derivatore:\\
-$f_t=\frac{1}{2 \pi R_G C}=\frac{1}{2 \pi 2,14 k\Omega 4.7\mu n }=15.4KHz$
+$f_c=\frac{1}{2 \pi R_G C}=\frac{1}{2 \pi 2,14 k\Omega 4.7\mu n }=15.4KHz$\\
+%\\
+%$v_o=-R_G \cdot C=-2,22k\Omega \cdot 4,7 \mu n=1.03V$\\
 \section{Analisi critica dei risultati e conclusioni}
-
+I valori sperimentali coincidono con quelli  oteniti dai calcoli apparte una discrepanza comunque accettabile
+tra i due valori di pendenza della retta.\\
 \end{document}

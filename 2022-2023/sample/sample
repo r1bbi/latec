@@ -40,7 +40,7 @@
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
-    linkcolor=Sepia,
+    linkcolor=darkgray,
     filecolor=Green,      
     urlcolor=Cyan,
     pdftitle={SAMPLE},
@@ -75,11 +75,12 @@
 \Huge{\textbf{Amplificatore invertente e non invertente}}\\
 \vfill
 \vfill
-\large{22-01-2022}
+\large{dd-mm-yyyy}
 \end{center}
 %=============== fine pagina titolo ===============
 \end{titlepage}
 \tableofcontents
+\newpage
 \vskip 1cm
 \section{Scopo}
 %

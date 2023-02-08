@@ -1,0 +1,126 @@
+% ============================ Enrico Ribiani 16-03-2021 ====================================================================
+% Base per i documenti  
+\documentclass[12pt]{article}
+% ------------ pacchetti necessari ----------------
+\usepackage[a4paper, total={6in, 8in},margin=1in]{geometry} % formattazione decente della pagina
+\usepackage{graphicx}                            % need for figure
+\usepackage{amsmath}
+\usepackage{amsfonts}                            % if you want the fonts
+\usepackage{amssymb}                             % if you want extra symbols
+\usepackage{graphicx}  
+\renewcommand{\figurename}{Figura}  
+\renewcommand{\contentsname}{Indice}                        % need for figures
+\usepackage{mathptmx}
+\usepackage{float}                               % serve per mettere tabelle e immagini dove si vuole 
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[hang,flushmargin,bottom]{footmisc}   % footnote format
+\usepackage{fancyhdr, lastpage}
+\usepackage{titlesec}
+\usepackage[table,dvipsnames]{xcolor}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand*\contentsname{Indice}
+\titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}	% required for heading numbering style
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+%\usepackage{siunitx}
+%\usepackage{tikz}
+\usepackage{circuitikz}
+%\usepackage[siunitx]{circuitikz}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{shorttoc}
+\usetikzlibrary{angles,quotes}
+\usepackage{placeins}
+
+\usepackage{wasysym}
+%===================links=================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkgray,
+    filecolor=Green,      
+    urlcolor=Cyan,
+    pdftitle={SAMPLE},
+    pdfpagemode=FullScreen,
+    }
+%===================inizio pagina del titolo=================
+\begin{document}
+    \begin{titlepage}
+    \begin{center}
+% ------------------ inizio immagine logo ----------
+\begin{figure}
+    \centering
+    \includegraphics{~/varie/logo.png}
+    \label{fig:logo}
+\end{figure}
+% ------------------ fine immagine logo ----------
+% ------------------ fine immagine logo ----------
+-------------------------------------------------------------------------------------\\
+\vspace{2\baselineskip}
+\large Enrico Ribiani\\
+\large Nicolò Ozretic\\
+
+\large 5AUB\\
+\vfill
+
+\Huge{\textbf{Nastro piano sollevatore comandato da PLC}}\\
+\vfill
+
+\LARGE{Relazione n°1}\\
+\vfill
+\large{14-10-2022}
+\end{center}
+%=============== fine pagina titolo ===============
+\end{titlepage}
+\tableofcontents
+\vskip 1cm
+\section{Introduzione}
+Questa relazione tecnica riguarda il sistema di controllo tramite PLC di una macchina composta una rulliera
+da due nastri trasportatori e un piano alzatore.\\
+Il sistema deve funzionare in modo automatico.\\
+Sono allegati il disegno esplicativo, gli schemi del plc e il programma ladder con cui verrà programmato
+il PLC.\\
+
+
+\section{Funzionamento}
+Il materiale trasportato arriva sul primo nastro trasportatore tramite una rulliera, se il pulsante di start 
+viene premuto il nastro fa spostare il materiale fino al primo finecorsa.\\
+Questo fine corsa fa alzare il piano elevatore che si ferma raggiunto il secondo finecorsa ossia all'altezza 
+del secondo nastro, quindi entrambi i nastri entrano in funzione fino al terzo finecorsa che è posto al punto 
+di prelevamento manuale del materiale.\\
+Attivato il terzo finecorsa il piano alzatore si abbassa al punto di partenza e il ciclo riparte automaticamente
+per altre 4 volte, dopodichè si ferma e per farlo ripartire ci sarà bisogno di premere nuovamente il pulsante
+di start.\\
+Come da normativa il sistema è dotato di un pulsante di emergenza per far fermare immediatamente i componenti
+in movimento e delle lampade che di segnalazione che indicano quando i macchinari sono in azione, quando il
+sistema è alimentato e quando è bloccato dal pulsante di emergenza.\\
+\section{Componenti}
+
+\begin{itemize}
+    \item \textbf{Parte di potenza}
+\end{itemize}
+\noindent
+bla
+bla
+bla
+\begin{itemize}
+    \item \textbf{Parte di comando}
+\end{itemize}
+bla
+bla
+bla
+\section{Manuale d'uso????}
+
+
+\section{Allegati}
+\subsection{Norme di riferimento}
+\subsection{Programma Ladder}
+\subsection{Disegno esplicaivo}
+
+\newpage
+
+
+\end{document}
