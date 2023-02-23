@@ -1,0 +1,133 @@
+% ============================ Enrico Ribiani 16-03-2021 ====================================================================
+% Base per i documenti  
+\documentclass[12pt]{article}
+% ------------ pacchetti necessari ----------------
+\usepackage[a4paper, total={6in, 8in},margin=1in]{geometry} % formattazione decente della pagina
+\usepackage{graphicx}                            % need for figure
+\usepackage{amsmath}
+\usepackage{amsfonts}                            % if you want the fonts
+\usepackage{amssymb}                             % if you want extra symbols
+\usepackage{graphicx}  
+\renewcommand{\figurename}{Figura}  
+\renewcommand{\contentsname}{Indice}                        % need for figures
+\usepackage{mathptmx}
+\usepackage{float}                               % serve per mettere tabelle e immagini dove si vuole 
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage[hang,flushmargin,bottom]{footmisc}   % footnote format
+\usepackage{fancyhdr, lastpage}
+\usepackage{titlesec}
+\usepackage[table,dvipsnames]{xcolor}
+%\pagestyle{fancy}
+%\renewcommand{\headrulewidth}{0pt}
+%\renewcommand*\contentsname{Indice}
+\titleformat{\section}{\normalsize\bfseries}{\thesection.}{1em}{}	% required for heading numbering style
+\titleformat*{\section}{\Large\bfseries}
+\titleformat*{\subsection}{\large\bfseries}
+%\usepackage{siunitx}
+%\usepackage{tikz}
+\usepackage{circuitikz}
+%\usepackage[siunitx]{circuitikz}
+\usepackage{multirow}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usetikzlibrary{angles,quotes}
+\usepackage{placeins}
+
+\usepackage{wasysym}
+%===================links=================
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=Sepia,
+    filecolor=Green,      
+    urlcolor=Cyan,
+    pdftitle={SAMPLE},
+    pdfpagemode=FullScreen,
+    }
+%===================inizio pagina del titolo=================
+\begin{document}
+    \begin{titlepage}
+    \begin{center}
+% ------------------ inizio immagine logo ----------
+\begin{figure}
+    \centering
+    \includegraphics{~/varie/logo.png}
+    \label{fig:logo}
+\end{figure}
+% ------------------ fine immagine logo ----------
+% ------------------ fine immagine logo ----------
+-------------------------------------------------------------------------------------\\
+\vspace{2\baselineskip}
+\large Enrico Ribiani\\
+\large 4AUB\\
+\vfill
+
+\Huge{\textbf{Avviatore M.A.T}}\\
+\vfill
+
+\LARGE{Relazione n°3}\\
+\vfill
+\large{22-01-2022}
+\end{center}
+%=============== fine pagina titolo ===============
+\end{titlepage}
+\tableofcontents
+\vskip 1cm
+\section{Introduzione}
+%Durante le ore di laboratorio di TPSE ogni studente è stato incaricato di disegnare e montare un quadro elettrico in grado di far avviare e fermare correttamente un motore asincrono trifase avendo a disposizione il software di disegno \textit{SPAC Automazione} e avendo i componenti elencati nella sezione ~\ref{Componenti}.\\
+%Sia che il disegno che il montaggio e il collaudo sono stati eseguiti in 4 sessioni di laboratorio da due ore e 30 l'una per poi concludere scrivendo una relazione tecnica.
+Questa relazione tecnica riguarda l'esercitazione laboratoriale riguardante gli avviatori di motori asincroni trifase svolte in  4 lezioni di laboratorio da due ore e 30 cadauna.\\
+La classe è stata incaricata di svolgere il disegno utilizzando il software di disegno \textit{SPAC Automazione} e il montaggio dell'avviatore collegato a un motore senza carico per scopo didattico.\\
+\section{Funzionamento}
+Il circuito era molto semplice in quanto era la prima volta che la classe svolgeva un esperieza simile, infatti l'utilizzo era limitato a far partire il motore e a farlo fermare.\\ 
+Il quadro era dotato di tre spie, una verde che si illuminava quando il motore era alimentato, una gialla accesa quando il relè termico entrava in funzione, e una rossa quando il motore era in moto.\\
+%Per comandare il motore erano necessari infatti solamente due pulsanti, uno di start(normalmente aperto) e uno di stop(normalmente chiuso), ovviamente uno serviva a far partire il motore e l'altro a fermarlo quando in funzione facendo aprire i contatti che lo collegavano al motore disattivando la bobina ausiliaria.\\
+Il pulsante di start serve ad alimentare la bobina che va a connettere il motore alle tre fasi chiudendo i contatti principali normalmente aperti, la bobina viene mantenuta eccitata tramite il parallelo.\\ 
+Al contrario invece il pulsante di stop se premuto va a sconnettere la bobina dall'alimentazione che farà lo stesso con il motore, un altra causa per il quale il motore una volta azionato si spegne è l'attivazione del relè termico che spegne la bobina facendo aprire i contatti.\\
+Il motore era dotato di tutte le protezioni già montate come fusibili, relè termici, sezionatori.\\
+Il circuito avviatore ha il compito di mettere in moto il motore e di far passare per un determinato lasso temporale le sovracorrenti necessarie all'avviamento, per questo motivo il motore necessita di varie protezioni previste dalla norma \textit{CEI EN 60 947}.\\
+Si può notare come all'interno dello stesso circuito ci sia una divisione tra parte di potenza e parte di comando.\\
+La parte di potenza si differisce da quella di comando perché alimentata dalla tensione di rete trifase a 400V formata dal motore, le sue protezioni e il trasformatore che alimenta con 24V bifase la parte di comando.\\
+Questa parte del circuito ha anche il compito di interfacciare l'operatore al motore tramite i due pulsanti sopracitati e le tre spie.\\
+\section{Componenti}
+\label{Componenti}
+\begin{itemize}
+    \item \emph{Q1} contattore
+          
+    \item \emph{Q2} sezionatore
+          
+    \item \emph{P1} spia gialla 
+    \item \emph{P2} spia rossa
+    \item \emph{P3} spia verde 
+    \item \emph{S1} pulsante di start
+    \item \emph{S0} pulsante di stop
+    \item \emph{F1,F2,F3,F5} fusibili
+    \item \emph{F4} relè termico
+    \item \emph{T1} trasformatore
+\end{itemize}
+\vspace{15pt}
+\begin{Large}
+\textbf{Protezioni} 
+\end{Large}
+\subsection*{Protezione dalle sovracorrenti}
+Il motore viene protetto dalle sovracorrenti che vanno a danneggiare il motore tramite il correlato aumento delle temperature, a questo serve il relè termico che in caso di sovraccorrenti e dalla durata dell'esposizione del motore ad esse fa staccare l'alimentazione alla bobina scollegando il motore e impedendone il danneggiamento.\\
+Non deve agire durante l'avviamento.
+\subsection*{Sezionatori}
+Vengono utilizzati per scollegare a monte il motore in caso di manutenzione.\\
+Questo componente non deve interrompere correnti maggiori di quelle nominali e serve solamente per scollegare il motore dalla rete elettrica.\\
+\subsection*{Contattore}
+Serve a stabilire o arrestare la corrente tramite i contatti principali e ad interfacciarsi con il circuito di comanddo tramite i suoi contatti ausiliari. Per questo motivo viene considerato un dispositivo di manovra.\\
+Per il dimensionamento i parametri principali considerati sono stati il potere di interruzione in particolare con le sovracorrenti tipiche dell'avviamento che deve sopportare per periodi stabiliti di tempo e se richiesto deve interromperle.
+\subsection*{Fusibili}
+I fusibili servono a interrompere tempestivamente le correnti di cortocircuito impedendo la rottura di componenti del motore.
+\section{Materiali}
+\begin{itemize}
+    \item Filo da \diameter1,5 cm  di colore rosa
+    \item Filo da \diameter1 cm  di colore grigio
+\end{itemize}
+\section{Allegati:}
+\newpage
+
+
+\end{document}
