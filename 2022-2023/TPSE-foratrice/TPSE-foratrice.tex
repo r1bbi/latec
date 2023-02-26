@@ -73,8 +73,11 @@
 	\end{center}
 	%=============== fine pagina titolo ===============
 \end{titlepage}
+\thispagestyle{empty}
 \tableofcontents
+
 \newpage
+\setcounter{page}{1}
 \section{Introduzione}
 In questa esercitazione laboratoriale è stata richiesta la gestione completa di una macchina automatica con il compito di forare e immagazzinare dei pezzi.\\
 La macchina è di tipo pneumatico infatti il suo principio di funzionamento è basato su tre cilindri pneumatici a doppio effetto, il nostro incarico è quello di progettare e programmare il sistema di controllo e di potenza segliendo le valvole più idonee alla soluzione da noi utilizzata.
@@ -111,43 +114,49 @@ Queste due ultime azioni avvengono contemporaneamente.\\
 	%\label{fig:my_label}
 \end{figure}
 \section{Componenti}
-È stato scelto il cilindro \textit{DSBC} prodotto da Festo poichè rappresenta uno standard per i cilindri a
+\subsubsection{Cilindro}
+È stato scelto il cilindro \textit{DSBC 2102632} prodotto da Festo poichè rappresenta uno standard per i cilindri a
 doppio effetto, ne vengono prodotti di molte dimensioni (1-2800 mm), rispettano la norma ISO15552 e sono fornite di dichiarazione di conformità
-oltre che il marchio \\
-Per controllare questo cilindro Festo consiglia la valvola universale \textit{VUVS-LK20-B52-D-G18-1C1-S} presente con funzione 5/2 e azionamento elettrico
+oltre che il marchio CE \\
+\subsubsection{Valvole}
+Per controllare questo cilindro scelto la casa produttrice consiglia la valvola universale \textit{VUVS-LK20-B52-D-G18-1C1-S} con funzione 5/2 e azionamento elettrico
 con il controllo standardizzato a 24V.\\
-Semore tramite il configuratore Festo andiamo a scegliere i sensori di finecorsa \textit{SMT-8M-A-PS-24V-E-2,5-OE} che rispettano lo standard
+Il prodotto presenta dichiarazione di conformità e marchio CE.\\
+\subsubsection{Finecorsa}
+Tramite il configuratore Festo andiamo a scegliere i sensori di finecorsa \textit{SMT-8M-A-PS-24V-E-2,5-OE} che rispettano lo standard
 EN 60947-5-2 funzionanti a 24V e quindi compatibili con lo standard infine il tubo \textit{PEN-8X1,25-BL} con cui collegare cilindri e
 valvole.\\
-Leggendo il datasheet i cilindri lavorano con una pressione minima di circa 1 bar e massima di circa 12 bar, abbiamo quindi bisogno
-di un compressore che eroghi minimo 3 bar non considerando le perdite della distribuzione quindi il compressore \textit{F41045} adempie
-pienamente i requisiti minimi necessari.\\
-Per la scelta del plc i parametri da rispettare sono i 24V come standard di funzionamento e la disposizione di almeno 7 ingressi e
+Il prodotto presenta dichiarazione di conformità e marchio CE.\\
+\subsubsection{Plc}
+Per la scelta del plc i parametri da rispettare sono la tensione di funzionamento standard 24V e la disposizione di almeno 7 ingressi e
 10 uscite.\\
-Il plc Schneider Electric \textit{TM241CEC24T} risulta idoneo, ma visto che andremo a programmarlo tramite il
-linguaggio ladder si può utilizzare il plc Zelio logic \textit{SR3B261BD}.\\
+Il plc Schneider Electric \textit{TM241CEC24T} risulta idoneo, ma visto che sarà a programmato tramite il
+linguaggio ladder si può utilizzare il plc Zelio logic\textit{SR3B261BD}.\\
 Tutti i prodotti presentano dichiarazione di conformità e marchio CE.\\
 \subsection{Preventivo}
 \begin{table}[H]
 	\centering
 	\begin{tabular}{|c|c|c|c|c|} \hline
-		\rowcolor{ForestGreen!70} Codice prodotto           & Dispositivo   & Quantità & Prezzo & Totale \\
+		\rowcolor{ForestGreen!70} Codice prodotto            & Dispositivo & Quantità & Prezzo & Totale \\
 		\hline
-		\rowcolor{SpringGreen!80} DSBC 2102632              & cilindro      & 3        & 190    & 570    \\
+		\rowcolor{SpringGreen!80} DSBC 2102632               & cilindro    & 3        & 190    & 570    \\
 		\hline
-		\rowcolor{LimeGreen!80}   VUVS-LK20-B52-D-G18-1C1-S & valvola 5/2   & 3        & 70     & 210    \\
+		\rowcolor{LimeGreen!80}   VUVS-LK20-B52-D-G18-1C1-S  & valvola 5/2 & 3        & 70     & 210    \\
 		\hline
-		\rowcolor{SpringGreen!80} F41045                    & compressore   & 1        & 900    & 900    \\
+		\rowcolor{SpringGreen!80}   SR3B261BD                & plc         & 1        & 300    & 300    \\
 		\hline
-		\rowcolor{LimeGreen!80}   SR3B261BD                 & plc           & 1        & 300    & 300    \\
+		\rowcolor{LimeGreen!80} PEN-8X1,25-BL                & tubo        & 1        & 40     & 40     \\
 		\hline
-		\rowcolor{SpringGreen!80} tubo                      & PEN-8X1,25-BL & 1        & 40     & 40     \\
+		\rowcolor{SpringGreen!80}   SMT-8M-A-PS-24V-E-2,5-OE & finecorsa   & 6        & 30     & 180    \\
+		\hline
+		\rowcolor{LimeGreen!80} 82-5551.1133L                & pulsante NO & 1        & 20     & 20     \\
 		\hline
 		\hline
-		\rowcolor{LimeGreen!40}                             &               &          &        & 2020   \\
+		\rowcolor{LimeGreen!40}                              &             &          &        & 1320   \\
 		\hline
 	\end{tabular}
 \end{table}
+Prezzi compresi di IVA.\\
 \newpage
 \section{Allegati}
 \subsection{Norme di riferimento}
@@ -162,19 +171,19 @@ IEC 947.4.1 - CEI EN 60947.41 - Apparecchiature in bassa tensione \\
 	\begin{tabular}{|c|c|c|} \hline
 		\rowcolor{Blue!80}  Sigla Input     & Componente  & Ingresso \\
 		\hline
-		\rowcolor{CornflowerBlue!50}  a0    & FC A-       & x        \\
+		\rowcolor{CornflowerBlue!50}  a0    & FC A-       & I1       \\
 		\hline
-		\rowcolor{RoyalBlue!50}    a1       & FC A+       & x        \\
+		\rowcolor{RoyalBlue!50}    a1       & FC A+       & I2       \\
 		\hline
-		\rowcolor{CornflowerBlue!50}  b0    & FC B-       & x        \\
+		\rowcolor{CornflowerBlue!50}  b0    & FC B-       & I3       \\
 		\hline
-		\rowcolor{RoyalBlue!50}    b1       & FC B+       & x        \\
+		\rowcolor{RoyalBlue!50}    b1       & FC B+       & I4       \\
 		\hline
-		\rowcolor{CornflowerBlue!50}  c0    & FC C-       & x        \\
+		\rowcolor{CornflowerBlue!50}  c0    & FC C-       & I5       \\
 		\hline
-		\rowcolor{RoyalBlue!50}    c1       & FC C+       & x        \\
+		\rowcolor{RoyalBlue!50}    c1       & FC C+       & I6       \\
 		\hline
-		\rowcolor{CornflowerBlue!50}  start & pulsante NO & x        \\
+		\rowcolor{CornflowerBlue!50}  start & pulsante NO & I7       \\
 		\hline
 	\end{tabular}
 	\caption{Tabella Input}
@@ -185,24 +194,28 @@ IEC 947.4.1 - CEI EN 60947.41 - Apparecchiature in bassa tensione \\
 	\begin{tabular}{|c|c|c|} \hline
 		\rowcolor{Blue!80}  Sigla Output    & Componente       & Uscita \\
 		\hline
-		\rowcolor{CornflowerBlue!50}  A\_dx & pos. A valvola 1 & x      \\
+		\rowcolor{CornflowerBlue!50}  A\_dx & pos. A valvola 1 & Q2     \\
 		\hline
-		\rowcolor{RoyalBlue!50}    A\_sx    & pos. B valvola 1 & x      \\
+		\rowcolor{RoyalBlue!50}    A\_sx    & pos. B valvola 1 & Q1     \\
 		\hline
-		\rowcolor{CornflowerBlue!50}  B\_dx & pos. A valvola 2 & x      \\
+		\rowcolor{CornflowerBlue!50}  B\_dx & pos. A valvola 2 & Q4     \\
 		\hline
-		\rowcolor{RoyalBlue!50}    B\_sx    & pos. B valvola 2 & x      \\
+		\rowcolor{RoyalBlue!50}    B\_sx    & pos. B valvola 2 & Q3     \\
 		\hline
-		\rowcolor{CornflowerBlue!50}  C\_dx & pos. A valvola 3 & x      \\
+		\rowcolor{CornflowerBlue!50}  C\_dx & pos. A valvola 3 & Q6     \\
 		\hline
-		\rowcolor{RoyalBlue!50}    C\_sx    & pos. B valvola 3 & x      \\
+		\rowcolor{RoyalBlue!50}    C\_sx    & pos. B valvola 3 & Q5     \\
 		\hline
 	\end{tabular}
 	\caption{Tabella Output}
 \end{table}
-\subsection{Programma PneumaticStudio}
-\subsection{Disegno esplicaivo}
-
+\newpage
+\subsection{PneumaticStudio}
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=0.9]{ps.png}
+	\label{fig:pneumatic studio}
+\end{figure}
 \newpage
 
 
