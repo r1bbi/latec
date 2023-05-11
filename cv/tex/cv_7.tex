@@ -1,0 +1,195 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Enrico} % Your first name
+\familyname{Ribiani} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Corso IV Novembre 37}{Mezzocorona, 38016}
+\mobile{(+39) 345 076 9587}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{enricoribiani@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[80pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Profilo professionale}
+\cvitem{}{Tecnico specializzato nell'automazione con buona conoscenza in ambito dell'elettrotecnica.}
+\cvitem{}{Da sempre appassionato alla tecnologia e all'innovazione, forte motivazione nell'intraprendere un lavoro correlato al mondo tecnico/industriale.}
+\cvitem{}{Buone capacità organizzative, ottima capacità relazionale e adatto a lavorare in gruppo.}
+
+
+\section{Istruzione}
+
+\cventry{2018--2023}{Diploma scuola superiore }{ITT M. Buonarroti}{Trento}{}{}  % Arguments not required can be left empty
+%\cventry{2007--2010}{Bachelor of Business Studies}{The University of California}{Berkeley}{\textit{GPA -- 7.5}}{Specialized in Commerce}
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Esperienze}
+
+\subsection{Estive}
+
+\cventry{7-8/2021}{\textbf{TICOS-Jr}}{Mezzocorona}{TN}{}{\textbf{Tirocinio:} progettista elettrotecnico}
+
+\cventry{6/2022}{\textbf{TICOS-Jr}}{Mezzocorona}{TN}{}{\textbf{Alternanza scuola lavoro:} progettista elettrotecnico}
+
+\cventry{7-8/2022}{\textbf{Hotel Fai Snc}}{ Fai della Paganella}{TN}{}{\textbf{Mansione:} Aiutocuoco}
+\subsection{Occasionali}
+\cventry{5/2023}{\textbf{TrentinoTv }}{Trento}{TN}{}{\textbf{Mansione:} Cameraman}
+
+
+%Capacità acquisite durante queste esperienze:
+%\begin{itemize}
+%\item 
+%\item 
+
+%\end{itemize}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Awards}
+
+%\cvitem{2011}{School of Business Postgraduate Scholarship}
+%\cvitem{2010}{Top Achiever Award -- Commerce}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Competenze informatiche}
+
+\cvitem{Basiche}{c++, Excel}
+\cvitem{Intermedie}{Disegno CAD, Ladder, SFC, ST, \LaTeX, Linux, Microsoft Windows,Multisim,LabView}
+
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Communication Skills}
+
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+\newpage
+\section{Competenze linguistiche}
+
+\cvitemwithcomment{Italiano}{Madrelingua}{}
+\cvitemwithcomment{Inglese}{Intermedio}{In grado di sostenere una conversazione}
+\cvitemwithcomment{Tedesco}{Base}{Conoscenza di parole e frasi base}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interessi}
+
+\renewcommand{\listitemsymbol}{o~} % Changes the symbol used for lists
+
+\cvlistitem{Tecnologia}
+\cvlistitem{Auto}
+\cvlistitem{Calisthenics}
+\section{Patenti
+}\cvitem{}{Categoria B}
+\section{Data di nascita}
+\cvitem{}{12/05/2004}
+\section{Firma}
+\vspace{1cm}
+\cvitem{}{\hline}
+\section{Privacy}
+\cvitem{}{Autorizzo il trattamento dei miei dati personali, ai sensi del D.lgs. 196 del 30 giugno 2003}
+%----------------------------------------------------------------------------------------
+
+\end{document}
